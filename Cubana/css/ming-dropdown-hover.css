@@ -1,0 +1,4 @@
+ul.nav li.dropdown:hover ul.dropdown-menu{
+	display: block;
+	margin-top:0px;
+}
