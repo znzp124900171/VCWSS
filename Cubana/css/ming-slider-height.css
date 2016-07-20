@@ -1,6 +1,0 @@
-.carousel-inner > .item > img,
-
-.carousel-inner > .item > a > img {
-  max-height: 700px;    /* Set slide height here */
-  width: 100% !important;
-}
