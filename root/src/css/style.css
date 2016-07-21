@@ -206,7 +206,7 @@ section {
 }
 .email, .phone {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	margin-right: 20px;
 	padding: 11px 0;
 	font-size: 15px;
@@ -449,7 +449,7 @@ section {
 /* 10 inner (Info)
 ----------------------------------------------------------------------------- */
 #inner-section {
-	background: url(../img/img-1.jpg) center;
+	background: url(../img/img-1x.jpg) center;
 }
 .intermediate-container .subheading h4 {
 	color: #ffffff;
