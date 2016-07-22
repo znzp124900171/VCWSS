@@ -104,3 +104,13 @@ section {
 ------------------------------------------------------------------------------
 */
 /* -- footer --*/
+
+.pre-footer{
+	background-color:#3C3C3C;
+	color:#D0D0D0;
+	font-size:14px;
+}
+.pre-footer-font{
+	color:#5bc0de;
+	font-family: Microsoft Yahei,"宋体";
+}

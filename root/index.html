@@ -411,10 +411,11 @@
     </section>
     <!-- / Clients -->
 
-     <!-- CONTACT -->
-    <section id="contact" class="bg-dark">
-      <div class="container">
-        <div class="row text-center info-contact">
+    <!-- Footer -->
+    <section id="contact" class="bg-dark" style="padding:0px 0px;">
+      <div class="pre-footer text-center">
+        <div class="container">
+        <div class="row text-center info-contact" style="margin-top:60px; margin-bottom:30px">
           <div class="col-sm-4 margin-b-md">
             <i class="icon-envelope"></i>
             <h4>Get in touch</h4>
@@ -439,8 +440,13 @@
           </div> <!-- end Support -->
         </div> <!-- /row -->
 
-        <div class="row">
-          <div class="col-md-12">
+        <div class="row"  style="margin-top:0px; margin-bottom:30px">
+          <div class="col-md-6">
+            <div class="contact-map" style="border-color: #fff; border-width:2px;">
+              <iframe src="https://www.google.com/maps/embed/v1/place?q=New+York+University&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 360px;"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
             <form role="form" name="ajax-form" id="ajax-form" action="php/contact.php" method="post" class="form-main">
               <div class="col-xs-12">
                 <div class="row">            
@@ -490,43 +496,19 @@
             </form> <!-- /form -->
           </div> <!-- end col-md-12 -->
         </div> <!-- end row -->
-      </div> <!-- container -->
+      </div>
+      
     </section>
-    <!-- End CONTACT -->
 
     <!-- Footer -->
-    <div class="pre-footer text-center" >
-      <div class="container" >
-        <div class="row" style="margin-top:30px; margin-bottom:30px">
-          <div class="col-sm-6 col-md-4 pre-footer-col">
-            <a href="#"><h3>首页</h3></a>
-            <a href="#events" class="pre-footer-font"><u>近期活动</u></a><br>
-            <a href="#photos" class="pre-footer-font"><u>学联画廊</u></a><br>
-            <a href="#clients" class="pre-footer-font"><u>合作伙伴</u></a><br>
-            <a href="#contact" class="pre-footer-font"><u>联系我们  </u></a><br>
-          </div>
-          <div class="col-sm-6 col-md-4 pre-footer-col">
-            <a href="#"><h3>网站地图1</h3></a>
-            <a href="#events" class="pre-footer-font"><u>子目录1</u></a><br>
-            <a href="#photos" class="pre-footer-font"><u>子目录2</u></a><br>
-            <a href="#clients" class="pre-footer-font"><u>子目录3</u></a><br>
-          </div>
-          <div class="col-sm-6 col-md-4 pre-footer-col">
-            <a href="#"><h3>网站地图2</h3></a>
-            <a href="#events" class="pre-footer-font"><u>子目录1</u></a><br>
-            <a href="#photos" class="pre-footer-font"><u>子目录2</u></a><br>
-            <a href="#clients" class="pre-footer-font"><u>子目录3</u></a><br>
-          </div>
-        </div>
-      </div>
-    </div>
     <footer class="footer" style="color:#FFF"> <!-- Footer-copyright -->
       <div class="container">
           <div class="row" style="margin:10px;">
             <div class="col-sm-6 col-md-6">
-              <a>©2016 VCWSS All Rights Reserved.</a>
-              <a href="#"><u>Privacy Policy</u></a>|
-              <a href="#"><u>Terms of Service</u></a>
+              <span style="margin-right:5px;"><a>©2016 VCWSS All Rights Reserved.</a></span>
+              <span style="margin-left:5px;margin-right:5px;"><a href="#"><u>Privacy Policy</u></a></span> |
+              <span style="margin-left:5px;margin-right:5px;"><a href="#"><u>Terms of Service</u></a></span> |
+              <span style="margin-left:5px; color="""><a href="#"><u>Site Map</u></a></span>
             </div>
             <div class="col-md-6 col-sm-6">
               <ul class="list-inline pull-right" style="margin-bottom:0px;">
