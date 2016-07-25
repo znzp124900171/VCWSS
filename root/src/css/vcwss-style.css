@@ -1,9 +1,346 @@
-section {
-	position: relative;
-	padding-top: 80px;
-	padding-bottom: 80px;
-	background-color: #fff;
+/* Theme Name: VSWSS-template - Multipurpose
+   Author:Nan Zhao, Ming Liu
+   Source:Cubana Template
+   Author e-mail: znzp124900171@gmail.com
+   Version: 1.0.0
+   Created:July 2016
+   File Description:Main CSS file of the template
+*/
+
+/* TABLE OF CONTENTS
+	1) Reset
+	2) Help classes
+	3) Parallax
+	4) Pre-loader
+	5) Topbar / Navigation
+	6) Home
+	7) About-us
+	8) Fun-facts
+	9) Portfolio
+	10) inner (Info)
+	11) Team / Skills
+	12) Services
+	13) Testimonials
+	14) Partners
+	15) Contact
+	16) Footer
+	17) Back-to-top
+	18) Responsive
+*/
+
+/* 1 Reset
+----------------------------------------------------------------------------- */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #535353;
 }
+*,*:before,*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus {
+    outline: 0 !important
+}
+iframe {
+    border: none;
+    width:100%;
+}
+a {
+    color: inherit;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+}
+a:hover,a:focus,a:active {
+    text-decoration: none;
+    color: #1dc6df;
+}
+p {
+    color: #737373;
+}
+img {
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+textarea {
+    max-width: 100%;
+    resize: none;
+}
+hr {
+	margin: 10px 0px;
+}
+address {
+	margin-bottom: 0px;
+}
+.btn {
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+.btn:focus,.btn:active {
+    outline: none;
+    color: #ffffff;
+}
+.btn-custom{
+	border-radius: 3px;
+	padding: 0.8em 1.8em;
+	color: #fff;
+	font-weight: 700;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+	text-transform: uppercase;
+}
+.btn-custom:hover,.btn-custom:focus{
+    color: #fff;
+}
+.btn-custom-outline {
+	border-radius: 3px;
+	padding: 0.8em 1.8em;
+	color: #fff;
+	font-weight: 700;
+	-webkit-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+	text-transform: uppercase;
+	background-color: transparent;
+	border-color: #ffffff;
+}
+.btn-custom-outline:hover,.btn-custom-outline:focus{
+	color: #ffffff;
+	background-color: rgba(255,255,255,.5);
+}
+.btn-bar a{
+	margin-right: 10px;
+}
+.form-control {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border-radius: 3px;
+	height: 38px;
+}
+.form-control:focus {
+	outline: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+section {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fff;
+}
+
+/* 4 Preloader
+----------------------------------------------------------------------------- */
+.animationload {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:999999;
+}
+.loader {
+    width:200px;
+    height:200px;
+    font-size: 24px;
+    text-align: center;
+    position:absolute;
+    left:50%; 
+    top:50%; 
+    background-image:url(../img/preloader.gif); 
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; 
+}
+
+/* 5 Topbar / Navigation
+----------------------------------------------------------------------------- */
+/* -- Topbar -- */
+.tagline {
+	background: #f6f6f6;
+	font-size: 13px;
+	color: #2d2e2e;
+}
+.email, .phone {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	padding: 11px 0;
+	font-size: 15px;
+}
+.tagline i {
+	font-weight: 400;
+	display: inline-block;
+	margin-right: 5px;
+}
+.tagline span {
+	font-weight: 400;
+	display: inline-block;
+	margin-right: 5px;
+}
+.email a {
+	transition: all 300ms;
+	-webkit-transition: all 300ms;
+}
+.email a:hover {
+	color: #1dc6df;
+}
+.top_socials {
+    margin: 0 12px;
+}
+.top_socials li {
+	width: 30px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 0;
+	padding: 0;
+}
+.top_socials a {
+	display: block;
+	line-height: 40px;
+	transition: all 300ms;
+	-webkit-transition: all 300ms;
+	text-align: center;
+	background-color: transparent;
+	font-size: 16px;
+	font-weight: 400;
+}
+.sign-in, .sign-up {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	padding: 11px 0;
+	font-size: 15px;
+	white-space: nowrap;
+}
+/* -- Navbar -- */
+.navbar-custom {
+	background-color: #ffffff;
+	margin-bottom: 0px;
+	width: 100%;
+	z-index: 1000;
+	border: none;
+	color: #333;
+	border-radius: 0px;
+	position: relative;
+	transition: background-color 1s ease-in-out, border 1s ease-in-out;
+	-moz-transition: background-color 1s ease-in-out, border 1s ease-in-out;
+	-webkit-transition: background-color 1s ease-in-out, border 1s ease-in-out;
+	-o-transition: background-color 1s ease-in-out, border 1s ease-in-out;
+	-moz-box-shadow: 0 2px 2px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1);
+	box-shadow: 0 2px 2px rgba(0,0,0,.1);
+}
+.navbar-custom .navbar-brand {
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #666;
+	font-weight: 800;
+	letter-spacing: 0.15em;
+	margin: 6px 0 0;
+	font-family: 'Roboto Slab', serif;
+}
+.navbar-custom .navbar-brand:hover {
+	background-color: #EEE;
+}
+.navbar-custom .nav {
+	padding: 6px 0px;
+}
+.navbar-custom .navbar-nav>li>a {
+	color: #666;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.navbar-custom .navbar-nav>.active>a, .navbar-custom .navbar-nav>.active>a:hover, .navbar-custom .navbar-nav>.active>a:focus,
+.navbar-custom .navbar-nav>.open>a, .navbar-custom .navbar-nav>.open>a:hover, .navbar-custom .navbar-nav>.open>a:focus,
+.navbar-custom .navbar-nav>li>a:hover, .navbar-custom .navbar-nav>li>a:focus {
+	background-color: transparent;
+}
+.navbar-brand > img {
+	max-height: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.right-inner-addon {
+	position: relative;
+	padding-right: 30px;
+}
+
+.righ-inner-addon i {
+	position: absolute;
+	right: 0px;
+	padding: 10px 12px;
+	pointer-events: none
+}
+
+/* 6 Home
+----------------------------------------------------------------------------- */
+.carousel-section {
+    background: url("../img/img-1.jpg");
+    overflow: hidden;
+    padding: 180px 0px;
+}
+.carousel-razon .carousel-caption {
+    position: static;
+    text-align: center;
+}
+.carousel-razon .carousel-indicators {
+    bottom: -130px !important;
+}
+.carousel-razon .carousel-indicators li {
+    margin: 0 2px;
+}
+.carousel-indicators li{
+    -webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	height: 12px;
+	width: 12px;
+	background: transparent;
+}
+.carousel-indicators .active {
+	background: #fff;
+}
+.carousel-text h1{
+	font-family: 'Roboto Slab', serif;
+}
+.carousel-text span{
+    text-transform: uppercase;
+}
+.carousel-text p{
+    color: #D2CFCF;
+    font-size: 16px;
+}
+.carousel-caption {
+	margin-bottom: 20%;
+}
+.carousel-control:hover {
+	background-color: #FFF;
+	opacity: 0.1;
+}
+.carousel-inner>.item {
+	width: 100%;
+	vertical-align: middle;
+	margin: 0 auto;
+	max-height: 700px; !important
+	padding-bottom: 60%;
+	overflow:hidden;
+}
+
+.carousel-inner img {
+	width: 100%;
+}
+
 
 /* Parallax 
 -----------------------------------------------------------------------------*/
@@ -35,68 +372,49 @@ section {
 	margin-bottom: 20px;
 	font-weight: 700;
 }
-/* 
-------------------------------------------------------------------------------
-*/
-/* -- Topbar --*/
-.tagline {
-	background: #f6f6f6;
-	font-size: 13px;
-	color: #2d2e2e;
-}
 
-.email, .phone {
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 20px;
-	padding: 11px 0;
-	font-size: 15px;
+/* 15 Contact
+----------------------------------------------------------------------------- */
+.form-main {
+	padding-top: 0px;
 }
-
-.tagline .pull-left i {
-	font-weight: 400;
-	display: inline-block;
-	margin-right: 5px;
+.error {
+	margin: 8px 0px;
+	display: none;
+	color: red;
+	font-family: 'Roboto Slab', serif;
 }
-.email a {
-	transition: all 300ms;
-	-webkit-transition: all 300ms;
+#ajaxsuccess {
+	font-size: 16px;
+	width: 100%;
+	display: none;
+	clear: both;
+	margin: 8px 0px;
+	font-family: 'Roboto Slab', serif;
 }
-.email a:hover {
-	color: #1dc6df;
+#contact .con_sub_text {
+	margin-top: 10px;
 }
-
-.sign-in, .sign-up {
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 20px;
-	padding: 11px 0;
-	font-size: 15px;
-	white-space: nowrap;
+#contact textarea.form-control{
+	height: 120px;
 }
-
-/* 
-------------------------------------------------------------------------------
-*/
-/* -- Nav --*/
-
-.navbar-brand > img {
-	max-height: 100%;
-	height: 100%;
-	-o-object-fit: contain;
-	object-fit: contain;
+#contact i {
+	margin-bottom: 0px;
+	font-size: 36px;
+	line-height: 36px;
 }
-
-.right-inner-addon {
-	position: relative;
-	padding-right: 30px;
+#contact h4 {
+	font-size: 22px;
+	line-height: 28px;
+	margin-bottom: 20px;
+	font-family: 'Roboto Slab', serif;
 }
-
-.righ-inner-addon i {
-	position: absolute;
-	right: 0px;
-	padding: 10px 12px;
-	pointer-events: none
+#contact a.support {
+	display: block;
+	font-size: 30px;
+}
+.info-contact {
+	font-size: 16px;
 }
 
 
@@ -104,3 +422,13 @@ section {
 ------------------------------------------------------------------------------
 */
 /* -- footer --*/
+
+.pre-footer{
+	background-color:#3C3C3C;
+	color:#D0D0D0;
+	font-size:14px;
+}
+.pre-footer-font{
+	color:#5bc0de;
+	font-family: Microsoft Yahei,"宋体";
+}
