@@ -1,0 +1,47 @@
+.content-wrapper {
+	border-top: 1px solid #F1F1F1;
+	border-right: 1px solid #E7E6E6;
+	border-left: 1px solid #E7E6E6;
+	background: white;
+	padding-bottom: 30px;
+	border-radius: 6px;
+	border-bottom: 1px solid #CFCFCF;
+	min-height:800px;
+	max-width:1108px;
+	margin:30px auto;
+}
+.sidebar-wrapper {
+	text-align: middle;
+	padding-left: 15%;
+}
+h3.top-shop {
+	color: #999;
+	padding: 0;
+	margin-bottom: 30px;
+	font-size: 12px;
+	font-weight: normal;
+}
+.sidebar-catalog {
+	font-weight: 30;
+	font-size: 16px;
+	margin: 40px 0;
+	color: #333;
+	letter-spacing: 1px;
+}
+.articles-container {
+	position: relative;
+	float: left;
+	padding-top: 40px;
+}
+.article {
+	margin:0 5.5% 40px;
+	width: 89%;
+	padding-bottom: 52px;
+	border-bottom: 1px dotted #CCC;
+}
+h2.article-title {
+	margin-bottom: 15px;
+}
+.article-image {
+	padding: 35px 0;
+}
