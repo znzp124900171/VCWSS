@@ -26,6 +26,7 @@
 	16) Footer
 	17) Back-to-top
 	18) Responsive
+	19) Affix
 */
 
 /* 1 Reset
@@ -431,4 +432,11 @@ section {
 .pre-footer-font{
 	color:#5bc0de;
 	font-family: Microsoft Yahei,"宋体";
+}
+
+/*19 Affix
+-------------------------------------------------------------------------------
+*/
+.affix{
+	top:50px;
 }
