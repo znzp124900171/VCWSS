@@ -1,0 +1,69 @@
+/* navbar
+-----------------------------------------------------*/
+.navbar-left {
+	font-family: NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+	font-weight: 400;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* content-wrapper
+-----------------------------------------------------*/
+.content-wrapper {
+	padding-bottom: 30px;
+	margin: 30px auto;
+}
+h1.article-title {
+	font-family: inherit;
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 36px;
+	color: #141414;
+	letter-spacing: -1px;
+}
+p.article-subtitle {
+	font-size: 16px;
+	color: #6b6a6a;
+	line-height: 25px;
+	padding: 6px 0;
+}
+.index-author-comments-date {
+	margin-top: 20px;
+}
+
+/*-- article main --*/
+.article-main {
+	margin: 30px auto;
+}
+
+/*-- article image --*/
+.article-image img{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.article-image {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 15px;
+}
+.article-image p{
+	text-align: right;
+	color: #aaa;
+	line-height: 20px;
+	padding-top: 15px;
+}
+
+/*-- article content --*/
+.article-content {
+	font-family: NotoSansHans-Regular,AvenirNext-Regular,arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	-webkit-font-smoothing: antialiased;
+}
+.article-content p {
+	line-height: 1.8;
+	color: #0e0e0e;
+}
+
+
