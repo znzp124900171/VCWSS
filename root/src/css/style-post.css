@@ -10,18 +10,30 @@
 /* content-wrapper
 -----------------------------------------------------*/
 .content-wrapper {
-	padding-bottom: 30px;
-	margin: 30px auto;
+	border-top: 1px solid #F1F1F1;
+	border-right: 1px solid #E7E6E6;
+	border-left: 1px solid #E7E6E6;
+	background: white;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-right: 15px;
+	border-radius: 6px;
+	border-bottom: 1px solid #CFCFCF;
+	min-height:800px;
+	max-width: 1144px;
+	margin-top:5px;
+	margin-right: 15px;
+	margin-bottom: 30px;
 }
 h1.article-title {
 	font-family: inherit;
 	font-size: 26px;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 36px;
 	color: #141414;
 	letter-spacing: -1px;
 }
-p.article-subtitle {
+i.article-subtitle {
 	font-size: 16px;
 	color: #6b6a6a;
 	line-height: 25px;
@@ -29,6 +41,28 @@ p.article-subtitle {
 }
 .index-author-comments-date {
 	margin-top: 20px;
+}
+/*-- share list --*/
+.sharelist {
+	width: 2rem;
+	position: fixed;
+	margin: 5rem 1rem 0 -6rem;
+	color: #aaa;
+	z-index: 1000;
+	padding-left: 0;
+}
+.sharelist li {
+	padding: 0;
+	line-height: 4rem;
+	height: 4rem;
+	width: 4rem;
+	text-align: center;
+	background-color: #f2f2f2;
+	border: 1px solid #fafafa;
+	position: relative;
+	display: block;
+	margin-bottom: -1px;
+	position: relative;
 }
 
 /*-- article main --*/
@@ -44,7 +78,9 @@ p.article-subtitle {
 }
 .article-image {
 	margin-bottom: 30px;
+	border-top: 1px solid #CCC;
 	border-bottom: 1px solid #CCC;
+	padding-top: 25px;
 	padding-bottom: 15px;
 }
 .article-image p{
@@ -58,12 +94,88 @@ p.article-subtitle {
 .article-content {
 	font-family: NotoSansHans-Regular,AvenirNext-Regular,arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
 	font-size: 16px;
+	font-style: normal;
 	line-height: 24px;
 	-webkit-font-smoothing: antialiased;
 }
 .article-content p {
-	line-height: 1.8;
+	font-weight: 400;
+	line-height: 1.58;
 	color: #0e0e0e;
 }
-
-
+/*-- article info --*/
+.article-info {
+	margin: 50px auto;
+	padding-bottom: 50px;
+	min-height: 100%;
+}
+.article-info h3 {
+	font-size: 18px;
+	line-height: 25px;
+}
+.article-info-container {
+}
+/*-- article form --*/
+.article-form {
+	margin: 50px auto;
+	padding-bottom: 50px;
+}
+.divider {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 15px auto;
+}
+.divider hr{
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%
+}
+.hr-left {
+	float: left;
+}
+.hr-right {
+	float: right;
+}
+/*-- article sidebar --*/
+.article-sidebar-container {
+	padding-top: 15px;
+}
+.article-sidebar-wrapper  {
+	padding-left: 6.7%;
+}
+h4.article-sidebar-top {
+	color: #000;
+	padding: 0;
+	font-size: 16px;
+	font-family: Helvetica，Arial，”华文细黑”，”微软雅黑” !important;
+	font-weight: normal !important;
+}
+.article-sidebar-container {
+	padding-bottom: 16px;
+	margin-bottom: 14px;
+}
+.sidebar-container-img img {
+	width: 260;
+	height: auto;
+}
+.sidebar-container-header h3 {
+	font-size: 18px;
+	line-height: 24px;
+	color: #141414;
+	font-weight: 700;
+	padding-right: 15.5%;
+}
+.sidebar-container-footer {
+	height: 16px;
+}
+.sidebar-container-footer p {
+	position: relative;
+	line-height: 15px;
+}
+.sidebar-container-footer .author {
+	color: #444;
+}
+.sidebar-container-footer .data {
+	color: #ccc;
+}
