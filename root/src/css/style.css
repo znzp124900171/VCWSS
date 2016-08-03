@@ -346,4 +346,8 @@
 	.facts {
 		margin-bottom: 50px;
 	}
+	.logo{
+		height:10px;
+		width:100px;
+	}
 }

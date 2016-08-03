@@ -323,7 +323,7 @@ section {
     font-size: 16px;
 }
 .carousel-caption {
-	margin-bottom: 20%;
+	margin-bottom: -80%;
 }
 .carousel-control:hover {
 	background-color: #FFF;
@@ -331,17 +331,21 @@ section {
 }
 .carousel-inner>.item {
 	width: 100%;
-	vertical-align: middle;
 	margin: 0 auto;
-	max-height: 700px; !important
+	height: 700px; !important
 	padding-bottom: 60%;
 	overflow:hidden;
 }
-
 .carousel-inner img {
 	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	-ms-transform: translateY(-50%) translateX(-50%);
+	-moz-transform: translateY(-50%) translateX(-50%);
+	transfrom: translateY(-50%) translateX(-50%);
 }
-
 
 /* Parallax 
 -----------------------------------------------------------------------------*/
@@ -438,5 +442,5 @@ section {
 -------------------------------------------------------------------------------
 */
 .affix{
-	top:200px;
+	top:80px;
 }
