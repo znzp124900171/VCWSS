@@ -1,0 +1,193 @@
+/* Navibar
+------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+h1 {
+	font-family: fzltxh,NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.5em;
+	padding-top: 20px;
+	margin-top: 0;
+}
+.section-header {
+	padding-bottom: 9px;
+	margin: 40px 0 20px 0;
+	border-bottom: 1px solid #eee;
+}
+.vcwss-intro {
+    height: 120px;
+    margin-bottom: 20px;
+}
+.vcwss-intro p {
+	font-size: 18px;
+	line-height: 1.5em;
+	color: #222;
+	letter-spacing: 1px;
+	font-family: "Hiragino Sans GB", "Microsoft YaHei",
+             "WenQuanYi Micro Hei", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+.vcwss-block {
+	margin-bottom: 20px;
+}
+.vcwss-block p {
+	margin-bottom: 50px;
+}
+.block-header {
+	float: left;
+	width: 30%;
+	margin-right: 20px;
+}
+#organization .intro-block {
+	margin-bottom: 20px;
+	padding-left: 0px;
+	padding-right: 10px;
+	color: #666;
+	letter-spacing: 2px;
+}
+.hover-block {
+	animation: flipUp;
+	position: relative;
+	width: 100%;
+	z-index: 999;
+	display: none;
+	background-color: #fff;
+	-webkit-transition: ease-in-out 0.4s;
+	transform-origin: 50% 0%;
+	transform: perspective(350px) rotateX(-90deg);
+}
+.hover-block h4 {
+	color: #111 !important;
+	text-align: center;
+}
+.hover-block p {
+	color: #555;
+	padding: 15px;
+	padding-left: 0;
+	font-size: 14px;
+}
+#organization .vcwss-block:hover  { box-shadow: 0px 0px 15px #ccc;z-index: 999; width: 100%;}
+#organization .vcwss-block:hover h4 {color: #f05050;}
+#organization .vcwss-block:hover .hover-block { display: block;
+-webkit-animation: flipUp 0.4s ease-in-out 0s forwards;
+-o-animation: flipUp 0.4s ease-in-out 0s forwards;
+animation: flipUp 0.4s ease-in-out 0s forwards;
+
+}
+
+#chief {
+	border: 0.5px solid #f05050;
+	box-shadow: 0px 0px 25px #f05050;
+}
+
+@-webkit-keyframes flipUp {
+0% {-webkit-transform: perspective(350px) rotateX(-90deg);}
+50% {-webkit-transform: perspective(350px) rotateX(30deg);}
+80% {-webkit-transform: perspective(350px) rotateX(-15deg);}
+100% {-webkit-transform: perspective(350px) rotateX(0deg); /* box-shadow:0 15px 10px -15px rgba(0,0,0,0.4); */}
+}
+@-o-keyframes flipUp {
+0% {-o-transform: perspective(350px) rotateX(-90deg);}
+50% {-o-transform: perspective(350px) rotateX(30deg);}
+80% {-o-transform: perspective(350px) rotateX(-15deg);}
+100% {-o-transform: perspective(350px) rotateX(0deg); /* box-shadow:0 15px 10px -15px rgba(0,0,0,0.4); */}
+}
+@keyframes flipUp {
+0% {transform: perspective(350px) rotateX(-90deg);}
+50% {transform: perspective(350px) rotateX(30deg);}
+80% {transform: perspective(350px) rotateX(-15deg);}
+100% {transform: perspective(350px) rotateX(0deg); /* box-shadow:0 15px 10px -15px rgba(0,0,0,0.4); */}
+}
+.team-member {
+	padding-top: 10px;
+	padding-right: 10px;
+}
+.team-member > a:hover {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 100%;
+}
+
+
+
+
+/* Sidebar
+------------------------------------------------------------------------*/
+.nav>li {
+	position: relative;
+	display: block;
+}
+
+#sidebar .nav > li > a:focus,
+#sidebar .nav > li > a:hover {
+	padding-left: 19px;
+	text-decoration: none;
+	color: #563d7c;
+	border-left: 1px solid #563d7c;
+	background-color: transparent;
+}
+#sidebar .nav > .active:focus > a,
+#sidebar .nav > .active:hover > a,
+#sidebar .nav > .active > a  {
+	font-weight: 700;
+	padding-left: 18px;
+	color: #563d71;
+	border-left: 2px solid #563d71;
+	background-color: transparent;
+}
+
+#sidebar .nav .nav {
+	display: none;
+	padding-bottom: 10px;
+}
+#sidebar .nav>.active>ul {
+	display: block;
+}
+#sidebar .nav .nav>li>a {
+	padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
+#sidebar .nav>li>a {
+	display: block;
+    padding: 4px 20px;
+    color: #767676;
+}
+
+
+
+
+
+
+
+
+
+#vcwss .container:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#vcwss .vcwss-block:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-width: 0 24px 24px 0;
+	border-style: solid;
+	border-color: #fff #fff #888 #888;
+	background: #888;
+	display: block;
+	width: 0;
+}
+
+
