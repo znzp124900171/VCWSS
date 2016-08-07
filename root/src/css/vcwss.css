@@ -103,15 +103,6 @@ animation: flipUp 0.4s ease-in-out 0s forwards;
 80% {transform: perspective(350px) rotateX(-15deg);}
 100% {transform: perspective(350px) rotateX(0deg); /* box-shadow:0 15px 10px -15px rgba(0,0,0,0.4); */}
 }
-.team-member {
-	padding-top: 10px;
-	padding-right: 10px;
-}
-.team-member > a:hover {
-	margin-top: 10px;
-	margin-left: 10px;
-	width: 100%;
-}
 
 
 
@@ -127,8 +118,8 @@ animation: flipUp 0.4s ease-in-out 0s forwards;
 #sidebar .nav > li > a:hover {
 	padding-left: 19px;
 	text-decoration: none;
-	color: #563d7c;
-	border-left: 1px solid #563d7c;
+	color: #f05050;
+	border-left: 1px solid #f05050;
 	background-color: transparent;
 }
 #sidebar .nav > .active:focus > a,
@@ -136,8 +127,8 @@ animation: flipUp 0.4s ease-in-out 0s forwards;
 #sidebar .nav > .active > a  {
 	font-weight: 700;
 	padding-left: 18px;
-	color: #563d71;
-	border-left: 2px solid #563d71;
+	color: #f05050;
+	border-left: 2px solid #f05050;
 	background-color: transparent;
 }
 
