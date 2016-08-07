@@ -320,34 +320,3 @@
     line-height: 33px;
 }
 
-/* 18 Responsive
------------------------------------------------------------------------------ */
-@media only screen and (max-width: 767px) {
-	.navbar-custom .navbar-brand {
-		padding: 13px 15px 20px 15px;
-		margin-top: 17px;
-		height: auto;
-	}
-	.navbar-custom .navbar-toggle {
-		margin: 23px 15px 23px 0px;
-	}
-	.intro-title,.intermediate-container .heading h2{
-		font-size: 30px;
-	}
-	#home {
-		padding: 200px 0px 120px;
-	}
-	.features-box .col-sm-4{
-		text-align: center !important;
-	}
-	.advanced-about .col-sm-6:first-of-type,.skill{
-		margin-bottom: 30px;
-	}
-	.facts {
-		margin-bottom: 50px;
-	}
-	.logo{
-		height:10px;
-		width:100px;
-	}
-}

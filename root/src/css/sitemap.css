@@ -1,64 +1,44 @@
 /* Sitemap
 ---------------------------------------------------------------------*/
-#sitemap-localnav[lang="zh-CN"] {
-	font-family: "HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
-#sitemap-localnav {
+/*-- 面包屑导航条 --*/
+.breadcrumbs-path {
+	margin: 20px auto 10px 0px;
+	font-size: 16px;
+	line-height: 1.7666;
+	font-weight: 400;
+	letter-spacing: normal;
 	position: relative;
-	width: 100%;
-	height: 52px;
-	z-index: 89;
-}
-#sitemap-localnav .sitemap-ln-wrapper {
-	position: relative;
-	padding-top: 10px;
-	width: 100%;
-	height: auto;
-	min-height: 100%;
 	z-index: 1;
 }
-#sitemap-localnav *,
-#sitemap-localnav *:before,
-#sitemap-localnav *:after {
-	font-size: 1em;
+.breadcrumbs-path:before {
+	content: ' ';
+	display: table;
+}
+.breadcrumbs-path:after {
+	clear: both;
+}
+.breadcrumbs-path ol {
+	padding-left: 0px;
+	display: inline-block;
+}
+.breadcrumbs-list {
+	direction: ltr;
+	list-style: none;
+}
+.breadcrumbs-item:before {
+	color: #d6d6d6;
+	padding-left: 0.2em;
+	font-family: FontAwesome;
+	content: "\f105";
+	display: inline-block;
+}
+.breadcrumbs-item > a > span {
+	padding-left: 10px;
+	font-size: 14px;
 	font-family: inherit;
 	font-weight: inherit;
 	line-height: inherit;
 	text-align: inherit;
-}
-#sitemap-localnav .sitemap-ln-content {
-	margin: 0 auto;
-	position: relative;
-	z-index: 2;
-}
-#sitemap-localnav .sitemap-ln-title,
-#sitemap-localnav .sitemap-ln-title a {
-	color: #333;
-	-webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-    transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-}
-#sitemap-localnav .sitemap-ln-title a {
-	display: inline-block;
-	line-height: 1;
-	margin: 0;
-	padding-bottom: 20px;
-	text-decoration: none;
-	white-space: nowrap;
-	vertical-align: middle;
-}
-#sitemap-localnav .sitemap-ln-title {
-	font-size: 20px;
-    line-height: 1.85714;
-    font-weight: 300;
-    letter-spacing: normal;
-    cursor: default;
-    display: block;
-    float: left;
-    margin: 0;
-    height: 52px;
-    white-space: nowrap;
-    -webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
 }
 /*-- 分类 --*/
 #sitemap-container section {
@@ -113,4 +93,14 @@
 }
 .category-section-item {
 	padding: 4px 0;
+	-webkit-font-smoothing: antialiased;
+}
+.more:after {
+	font-family: FontAwesome;
+	content: "\f105";
+	display: inline-block;
+	vertical-align: bottom;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	font-size: 14px;
 }
