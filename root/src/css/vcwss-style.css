@@ -435,6 +435,8 @@ section {
 	margin-bottom: 20px;
 	font-weight: 700;
 }
+/* 14 Partners
+----------------------------------------------------------------------------- */
 
 /* 15 Contact
 ----------------------------------------------------------------------------- */
@@ -487,14 +489,98 @@ section {
 /* -- footer --*/
 
 .pre-footer{
-	background-color:#3C3C3C;
-	color:#D0D0D0;
-	font-size:14px;
+	background-color:#f5f5f5;
+	position: relative;
+	letter-spacing: 1px;
 }
-.pre-footer-font{
-	color:#5bc0de;
-	font-family: Microsoft Yahei,"宋体";
+#clients.container{
+	position: relative;
 }
+.rm-r-p{
+	padding-right: 0;
+}
+.rm-r-l{
+	padding-left: 0;
+}
+.index-footer{
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    position: relative;
+    margin-top: 67px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+.footer-nav{
+	text-align: left;
+	font-family: 幼圆,Microsoft Yahei,"宋体";
+}
+.footer-nav dt{
+	font-size: 16px;
+	color:#333;
+	font-weight: 300;
+	margin-bottom: 10px;
+	padding-left: 16px;
+	line-height: 1;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: rgb(216,216,216);
+}
+.footer-nav dd{
+	line-height: 2;
+	font-size:13px;
+	margin-bottom: 4px;
+	color: #666;
+	margin-left: 20px;
+}
+.link-icons{
+	padding-left: 0!important;
+}
+.link-icons .link-icon{
+	float: left;
+	width: 37px;
+	height:37px;
+	line-height: 37px;
+	border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 17px;
+    margin-bottom: 12px;
+    margin-left: 0px;
+    cursor: pointer;
+    -webkit-user-select:none;
+}
+
+[class*=" icon-"]:before, [class^=icon-]:before, [data-icon]:before {
+    font-family: wd-icon!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    text-transform: none!important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.fa-weixin{
+	font-size: 24px;
+	color:rgb(27,162,36);
+	line-height: 42px;
+    position: relative;
+    padding-left: 2px;
+    bottom: 2px;
+}
+.fa-weixin:hover{
+	font-size: 30px;
+}
+
+
 
 /*19 Affix
 -------------------------------------------------------------------------------
