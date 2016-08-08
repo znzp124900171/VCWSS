@@ -1,4 +1,4 @@
-/* Theme Name: VSWSS-template - Multipurpose
+﻿/* Theme Name: VSWSS-template - Multipurpose
    Author:Nan Zhao, Ming Liu
    Source:Cubana Template
    Author e-mail: znzp124900171@gmail.com
@@ -280,7 +280,7 @@ section {
 	position: absolute;
 	top: 55px;
 	left: 0;
-	width: 100px;
+	width: 96px;
 	overflow: hidden;
 	box-shadow: 0px 1px 2px rgba(0,0,0,.1);
 }
@@ -289,7 +289,7 @@ section {
 	padding-left: 0px;
 	float: left;
 	z-index: 1000;
-	width: inherit;
+	width: 96px;
 	transition: all .2s;
 }
 .submenu-dropdown > li > a {
@@ -318,6 +318,7 @@ section {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
 /* 6 Home
 ----------------------------------------------------------------------------- */
 .carousel-section {
@@ -366,7 +367,7 @@ section {
 .carousel-inner>.item {
 	width: 100%;
 	margin: 0 auto;
-	height: 700px; !important
+	height: 700px;!important
 	padding-bottom: 60%;
 	overflow:hidden;
 }
@@ -379,6 +380,13 @@ section {
 	-ms-transform: translateY(-50%) translateX(-50%);
 	-moz-transform: translateY(-50%) translateX(-50%);
 	transfrom: translateY(-50%) translateX(-50%);
+}
+@media only screen and (max-width: 1280px) {
+	.carousel-inner>.item {
+		width:100%;
+		padding-bottom:60%;
+		height:0;
+	}
 }
 
 /* Sidebar
@@ -527,17 +535,17 @@ section {
 	height:37px;
 	line-height: 37px;
 	border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    background-color: #f5f5f5;
-    text-align: center;
-    margin-top: 5px;
-    margin-right: 17px;
-    margin-bottom: 12px;
-    margin-left: 0px;
-    cursor: pointer;
-    -webkit-user-select:none;
+    	border-top-right-radius: 50%;
+    	border-bottom-right-radius: 50%;
+    	border-bottom-left-radius: 50%;
+    	background-color: #f5f5f5;
+    	text-align: center;
+    	margin-top: 5px;
+    	margin-right: 17px;
+    	margin-bottom: 12px;
+    	margin-left: 20px;
+    	cursor: pointer;
+    	-webkit-user-select:none;
 }
 
 [class*=" icon-"]:before, [class^=icon-]:before, [data-icon]:before {
@@ -555,12 +563,70 @@ section {
 	font-size: 24px;
 	color:rgb(27,162,36);
 	line-height: 42px;
-    position: relative;
-    padding-left: 2px;
-    bottom: 2px;
+    	position: relative;
+    	padding-left: 2px;
+    	bottom: 2px;
+}
+.fa-youtube{
+	font-size: 25px;
+	color:rgb(188,36,36);
+	line-height: 42px;
+    	position: relative;
+    	padding-left: 2px;
+    	bottom: 2px;
+}
+.fa-youtube:hover{
+	font-size: 30px;	
 }
 .fa-weixin:hover{
 	font-size: 30px;
+}
+.link-icon img {
+	display: none;
+
+}
+.link-icon:hover img {
+	display: block;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	margin-left:-60px;
+	bottom:50px;
+}
+.address-text{
+    	font-size: 12px;
+    	color: #818181;
+    	clear: both;
+    	margin-left: 20px;
+    	padding-top: 10px;
+    	border-top-width: 1px;
+    	border-top-style: solid;
+    	border-top-color: rgb(229, 229, 229);
+    	width: 190px;
+    	padding-bottom: 5px;
+    	position: relative;
+    	top: 6px;
+}
+.address-full{
+	font-size: 11px;
+    	color: #818181;
+    	clear: both;
+    	margin-left: 20px;
+    	padding-top: 0px;
+    	padding-bottom: 5px;
+    	position: relative;
+    	top: 6px;
+}
+.contact-text{
+    	font-size: 12px;
+    	color: #818181;
+    	clear: both;
+    	margin-left: 20px;
+    	padding-top: 10px;
+    	width: 190px;
+    	padding-bottom: 5px;
+    	position: relative;
+    	top: 6px;
 }
 
 /* 18 Responsive
