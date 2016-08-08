@@ -41,6 +41,9 @@
 	text-align: inherit;
 }
 /*-- 分类 --*/
+#sitemap-container {
+	position: relative;
+}
 #sitemap-container section {
 	padding-top: 10px;
 	padding-bottom: 10px;
