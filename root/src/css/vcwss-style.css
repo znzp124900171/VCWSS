@@ -9,8 +9,9 @@
 
 /* TABLE OF CONTENTS
 	1) Reset
-	2) Help classes
+	2) Overwrite Bootstrap
 	3) Parallax
+	4) Breadcrumbs
 	4) Pre-loader
 	5) Topbar / Navigation
 	6) Home
@@ -26,7 +27,8 @@
 	16) Footer
 	17) Back-to-top
 	18) Responsive
-	19) Affix
+	19) Components
+	20) Affix
 */
 
 /* 1 Reset
@@ -56,7 +58,7 @@ a {
 }
 a:hover,a:focus,a:active {
     text-decoration: none;
-    color: #1dc6df;
+    color: #2373be;
 }
 p {
     color: #737373;
@@ -65,7 +67,7 @@ img {
     max-width: 100%;
 }
 h1,h2,h3,h4,h5,h6,p {
-    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+    font-family: "HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 textarea {
     max-width: 100%;
@@ -136,6 +138,56 @@ section {
   background-color: #fff;
 }
 
+/* 2 Overwrite Bootstrap
+----------------------------------------------------------------------------- */
+.jumbotron {
+	background-color: #fff;
+	border-bottom: 1px solid #d6d6d6;
+	min-height: 320px;
+}
+
+/* 4 Breadcrumbs
+----------------------------------------------------------------------------- */
+.breadcrumbs-path {
+	margin: 20px auto 10px 0px;
+	font-size: 16px;
+	line-height: 1.7666;
+	font-weight: 400;
+	letter-spacing: normal;
+	position: relative;
+	z-index: 1;
+}
+.breadcrumbs-path:before {
+	content: ' ';
+	display: table;
+}
+.breadcrumbs-path:after {
+	clear: both;
+}
+.breadcrumbs-path ol {
+	padding-left: 0px;
+	display: inline-block;
+}
+.breadcrumbs-list {
+	direction: ltr;
+	list-style: none;
+}
+.breadcrumbs-item:before {
+	color: #d6d6d6;
+	padding-left: 0.2em;
+	font-family: FontAwesome;
+	content: "\f105";
+	display: inline-block;
+}
+.breadcrumbs-item > a > span {
+	padding-left: 10px;
+	font-size: 14px;
+	font-family: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	text-align: inherit;
+}
+
 /* 4 Preloader
 ----------------------------------------------------------------------------- */
 .animationload {
@@ -160,6 +212,7 @@ section {
     background-position:center;
     margin:-100px 0 0 -100px; 
 }
+
 
 /* 5 Topbar / Navigation
 ----------------------------------------------------------------------------- */
@@ -280,7 +333,7 @@ section {
 	position: absolute;
 	top: 55px;
 	left: 0;
-	width: 96px;
+	width: 100px;
 	overflow: hidden;
 	box-shadow: 0px 1px 2px rgba(0,0,0,.1);
 }
@@ -289,7 +342,7 @@ section {
 	padding-left: 0px;
 	float: left;
 	z-index: 1000;
-	width: 96px;
+	width: 100px;
 	transition: all .2s;
 }
 .submenu-dropdown > li > a {
@@ -662,9 +715,18 @@ section {
 }
 
 
-/*19 Affix
+/*19 Components
 -------------------------------------------------------------------------------
 */
+
+
+
+
+
+
+
+
+
 .affix{
-	top:70px;
+	top:0px;
 }
