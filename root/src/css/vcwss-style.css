@@ -440,6 +440,26 @@ section {
 		padding-bottom:60%;
 		height:0;
 	}
+	.carousel-text{
+		position: relative;
+		margin-bottom: -15%;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.carousel-text{
+		position: relative;
+		margin-bottom: 30%;
+	}
+	.carousel-text h1{
+		font-size:30px;
+	}
+	.carousel-text span{
+		font-size: 25px;
+	}
+	.carousel-text p{
+		display: none;
+	}
 }
 
 /* Sidebar
