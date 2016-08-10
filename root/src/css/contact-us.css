@@ -11,12 +11,13 @@
 	border-image: url(../../src/img/contact-bg-border.jpg) 10 10 round;
 }
 #contact-form {
-
+	border: 10px solid transparent;
 	padding-left: 20px;
 	padding-right: 10%;
 }
-#contact-form h2 {
-	
+#contact-form h3 {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 #contact-form .more:after {
 	padding-left: 5px;
@@ -25,10 +26,16 @@
 	color: #f05050;
 }
 #contact-info {
-	
+	padding-top: 20px;
+}
+#contact-info dl dd a {
+	font-size: 16px;
+}
+#contact-info dl dd a:hover {
+	color: #337ab7;
 }
 #contact-info dl dt{
-	padding-top: 20px;
+	padding-top: 10px;
 	font-family: inherit;
 	font-size: 16px;
 	color: #f05050;

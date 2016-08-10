@@ -9,28 +9,28 @@
 
 		<title>VCWSS</title>
 		<!-- Bootstrap core CSS -->
-	    <link href="../../src/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="../../css/common/bootstrap.min.css" rel="stylesheet">
 	    <!-- animated css  -->
-	    <link href="../../src/css/animate.css" rel="stylesheet" type="text/css" media="screen">
+	    <link href="../../css/common/animate.css" rel="stylesheet" type="text/css" media="screen">
 	    <!-- animated-delay-custom css  -->
-	    <link href="../../src/css/animations-delay.css" rel="stylesheet" type="text/css" media="screen">
+	    <link href="../../css/common/animations-delay.css" rel="stylesheet" type="text/css" media="screen">
 	    <!-- Owl-carousel CSS -->
-	    <link href="../../src/css/owl.carousel.css" rel="stylesheet">
-	    <link href="../../src/css/owl.theme.css" rel="stylesheet">
+	    <link href="../../css/common/owl.carousel.css" rel="stylesheet">
+	    <link href="../../css/common/owl.theme.css" rel="stylesheet">
 	    <!--external css-->
-	    <link href="../../src/css/simple-line-icons.css" rel="stylesheet" />
-	    <link href="../../src/css/font-awesome.min.css" rel="stylesheet" />
+	    <link href="../../css/common/simple-line-icons.css" rel="stylesheet" />
+	    <link href="../../css/common/font-awesome.min.css" rel="stylesheet" />
 	    <!-- Circliful CSS -->
-	    <link href="../../src/css/jquery.circliful.css" rel="stylesheet" />
+	    <link href="../../css/common/jquery.circliful.css" rel="stylesheet" />
 	    <!--popups css-->
-	    <link href="../../src/css/magnific-popup.css" rel="stylesheet" type="text/css">
+	    <link href="../../css/common/magnific-popup.css" rel="stylesheet" type="text/css">
 	    <!-- Global styles -->
-	    <link rel="stylesheet" type="text/css" href="../../src/css/vcwss-style.css">
-	    <link href="../../src/css/red.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="../../css/common/vcwss-style.css">
+	    <link href="../../css/common/red.css" rel="stylesheet">
 	    <!-- Custom styles for this page -->
-	    <link rel="stylesheet" type="text/css" href="../../src/css/contact-us.css">
-	    <link href="../../src/css/style.css" rel="stylesheet">
-	    <link href="../../src/css/ming-footer.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="../../css/contact-us.css">
+	    <link href="../../css/style.css" rel="stylesheet">
+	    <link href="../../css/ming-footer.css" rel="stylesheet">
 	</head>
 	<body data-spy="scroll" data-offset="0">
 		<!-- Preloader -->
@@ -45,7 +45,7 @@
 	          <div class="pull-left">
 	            <div class="phone">
 	              <a href="tel:0123456789">
-	                <i class="fa fa-phone"></i> +1234567890
+	                <i class="fa fa-phone"></i> +49 1733432796
 	              </a>
 	            </div>
 	            <div class="email">
@@ -81,7 +81,7 @@
 		              <span class="icon-bar"></span>
 		            </button>
 		            <a class="navbar-brand logo" href="#">
-		              <img alt="Brand" src="../../src/img/logo.png" class="img-responsive logo">
+		              <img alt="Brand" src="../../img/logo.png" class="img-responsive logo">
 		            </a>
 	        	</div><!-- /.navbar-header-->
 	          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -149,15 +149,24 @@
 		    	<div class="row">
 		    		<div class="col-md-8" id="contact-form">
 		    			<h2>联系我们</h2>
-		    			<h3><small>您可以通过填写下面的表单与我们直接联系，或通过右边显示的电子邮件地址与我们联系,也可以转至下载页面，下载表格寄给我们,我们期待与您的交流.</small></h3>
+		    			<h3><small>您可以通过填写下面的表单与我们直接联系，或通过右边显示的电子邮件地址与我们联系,也可以转至<a href="#" style="color:#337ab7">下载</a>页面，下载表格寄给我们,我们期待与您的交流.</small></h3>
 		    			<form>
 	    					<div class="form-group">
 	    						<label class="more" for="">姓名:</label>
-	    						<input type="name" class="form-control" id="" placeholder="">
+	    						<input type="name" class="form-control" id="" placeholder="姓名">
 	    					</div>
 	    					<div class="form-group">
 	    						<label class="more" for="">Email:</label>
 	    						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+	    					</div>
+	    					<div class="form-group">
+	    						<label for="">主题</label>
+	    						<select class="form-control">
+	    							<option>申请加入</option>
+	    							<option>赞助合作</option>
+	    							<option>交流访问</option>
+	    							<option>其他</option>
+	    						</select>
 	    					</div>
 							<div class="form-group">
 							<label class="more" for="">标题:</label>
@@ -171,16 +180,19 @@
 								<button type="submit" class="btn btn-custom"><i class="fa fa-paper-plane" style="margin-left:-10px;padding-right:10px;font-size:20px;"></i>提交</button>
 							</div>
 						</form>
+						<div>
+							<img src="../../img/contact/postmark.png" style="max-width:300px;margin-top:20px;opacity:0.5;">
+						</div>
 		    		</div>
 		    		<div class="col-md-4" id="contact-info">
 		    			<dl>
 		    				<dt>电子邮件</dt>
-		    				<dd>info@vcwss.de</dd>
+		    				<dd><a href="mailto:info@vcwss.de">info@vcwss.de</a></dd>
 		    				<dt>紧急电话</dt>
-		    				<dd>+49</dd>
+		    				<dd><a href="tel:+491733432796">+49 1733432796</a></dd>
 		    				<dt>地址及办公时间</dt>
 		    				<dd>
-		    					<h5>Campus Vaihingen</h5>
+		    					<h5>Campus Vaihingen<small class="help-block">答疑</small></h5>
 		    					<div class="row">
 				    				<div class="col-md-6">
 				    					<p>Hellblaues Nilpferd</p>
@@ -194,13 +206,13 @@
 				    			</div>
 		    				</dd>
 		    				<dd>
-		    					<h5>Campus Stadtmitte</h5>
+		    					<h5>Campus Stadtmitte<small class="help-block">主席答疑</small></h5>
 		    					<div class="row">
 				    				<div class="col-md-6">
-				    					<p>Internationale Zentrum</p>
-				    					<p>Zimmer U022</p>
-				    					<p>Pfaffenwaldring 69</p>
-				    					<p>70569 Stuttgart</p>
+				    					<p>ZFB, Raum 2.036</p>
+				    					<p>Stock 2a</p>
+				    					<p>Keplerstr. 17</p>
+				    					<p>70174 Stuttgart</p>
 				    				</div>
 				    				<div class="col-md-6">
 				    					<p>周二 18:30-20:30</p>
@@ -208,7 +220,7 @@
 				    			</div>
 		    				</dd>
 		    				<dd>
-		    					<h5>Campus Vaihingen</h5>
+		    					<h5>Campus Vaihingen<small class="help-block">例会答疑</small></h5>
 		    					<div class="row">
 				    				<div class="col-md-6">
 				    					<p>Internationale Zentrum</p>
@@ -241,36 +253,36 @@
 	    ================================================== -->
 	    <!-- Placed at the end of the document so the pages load faster -->
 	    <!-- initialize jQuery Library -->
-	    <script src="../../src/js/jquery.min.js"></script>
+	    <script src="../../js/jquery.min.js"></script>
 	    <!-- jquery easing -->
-	    <script src="../../src/js/jquery.easing.min.js"></script>
+	    <script src="../../js/jquery.easing.min.js"></script>
 	    <!--sticky header-->
-	    <script type="text/javascript" src="../../src/js/jquery.sticky.js"></script>
+	    <script type="text/javascript" src="../../js/jquery.sticky.js"></script>
 	    <!-- Bootstrap -->
-	    <script src="../../src/js/bootstrap.min.js"></script>
+	    <script src="../../js/bootstrap.min.js"></script>
 	    <!-- SmoothScroll -->
-	    <script src="../../src/js/SmoothScroll.js"></script>
+	    <script src="../../js/SmoothScroll.js"></script>
 	    <!-- owl-carousel -->
-	    <script src="../../src/js/owl.carousel.js"></script>
+	    <script src="../../js/owl.carousel.js"></script>
 	    <!-- Counter-up -->
-	    <script src="../../src/js/waypoints.min.js" type="text/javascript"></script>
-	    <script src="../../src/js/jquery.counterup.min.js" type="text/javascript"></script>
+	    <script src="../../js/waypoints.min.js" type="text/javascript"></script>
+	    <script src="../../js/jquery.counterup.min.js" type="text/javascript"></script>
 	    <!--popup js-->
-	    <script src="../../src/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+	    <script src="../../js/jquery.magnific-popup.min.js" type="text/javascript"></script>
 	    <!-- Parallax -->
-	    <script src="../../src/js/jquery.stellar.min.js"></script>
+	    <script src="../../js/jquery.stellar.min.js"></script>
 	    <!-- cross browser -->
 	    <script type="text/javascript">
 	      window.requestAnimationFrame||(window.requestAnimationFrame=function(){return window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(n){window.setTimeout(n,1e3/60)}}());
 	    </script>
 	    <!-- EasyPieChart -->
-	    <script src="../../src/js/jquery.circliful.min.js"></script>
+	    <script src="../../js/jquery.circliful.min.js"></script>
 	    <!-- Typed -->
-	    <script src="../../src/js/typed.js" type="text/javascript"></script>
+	    <script src="../../js/typed.js" type="text/javascript"></script>
 	    <!-- customizable plugin edit according to your needs -->
-	    <script src="../../src/js/app.js" type="text/javascript"></script>
-	    <script src="../../src/js/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
-	    <script type="text/javascript" src="../../src/js/cms5sqn.js"></script>
+	    <script src="../../js/app.js" type="text/javascript"></script>
+	    <script src="../../js/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+	    <script type="text/javascript" src="../../js/cms5sqn.js"></script>
 	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</body>
 </html>

@@ -207,7 +207,7 @@ section {
     position:absolute;
     left:50%; 
     top:50%; 
-    background-image:url(../img/preloader.gif); 
+    background-image:url(../..img/preloader.gif); 
     background-repeat:no-repeat;
     background-position:center;
     margin:-100px 0 0 -100px; 
@@ -375,7 +375,7 @@ section {
 /* 6 Home
 ----------------------------------------------------------------------------- */
 .carousel-section {
-    background: url("../img/img-1.jpg");
+    background: url("../../img-1.jpg");
     overflow: hidden;
     padding: 180px 0px;
 }
@@ -483,7 +483,7 @@ section {
 /* 10 inner (Info)
 ----------------------------------------------------------------------------- */
 #inner-section {
-	background: url(../tmp_src/img-1.jpg) center;
+	background: url(../../img/tmp_img-1.jpg) center;
 }
 .intermediate-container .subheading h4 {
 	color: #ffffff;

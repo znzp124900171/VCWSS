@@ -16,7 +16,7 @@
 	color: #f05050 !important;
 }
 .item-img-overlay span{
-    background: url(../img/plus.png) no-repeat center center rgba(240, 80, 80,.7);
+    background: url(../../img/plus.png) no-repeat center center rgba(240, 80, 80,.7);
 }
 .work-desc{
     border-bottom: 2px solid rgba(240, 80, 80,.7);
