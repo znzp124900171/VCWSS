@@ -30,42 +30,7 @@
 
 
 
-/* 2 Helper classes
------------------------------------------------------------------------------ */
-.margin-t-md {
-	margin-top: 30px;
-}
-.margin-b-md {
-	margin-bottom: 30px;
-}
-.title {
-	font-weight: 700;
-	letter-spacing: 0.02em;
-	text-transform: uppercase;
-	font-family: 'Roboto Slab', serif;
-	margin-bottom: 20px;
-}
-.slog {
-	font-size: 16px;
-	max-width: 420px;
-	margin: 0 auto;
-	margin-bottom: 80px;
-}
-.bg-dark {
-	background: #f4f4f4;
-	border-bottom: 1px solid #eee;
-	border-top: 1px solid #eee;
-}
-/* 3 Parallax
------------------------------------------------------------------------------ */
-.parallax {
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-}
+
 
 
 
@@ -188,25 +153,7 @@
 .work-desc span {
 	margin-top: 10px;
 }
-/* 10 inner (Info)
------------------------------------------------------------------------------ */
-#inner-section {
-	background: url(../img/img-1x.jpg) center;
-}
-.intermediate-container .subheading h4 {
-	color: #ffffff;
-	font-style: italic;
-	font-family: 'Roboto Slab', serif;
-}
-.intermediate-container .heading h2 {
-	font-size: 40px;
-	line-height: 47px;
-	text-transform: uppercase;
-	margin-top: 30px;
-	color: #ffffff;
-	margin-bottom: 20px;
-	font-weight: 700;
-}
+
 /* 11 Team / Skills
 ----------------------------------------------------------------------------- */
 .team h4,.skill h4 {
@@ -288,14 +235,7 @@
 
 /* 16 Footer
 ----------------------------------------------------------------------------- */
-.footer {
-	background: #383838;
-}
-.footer p{
-	margin-bottom: 0px;
-	padding:20px 0px;
-	font-family: 'Roboto Slab', serif;
-}
+
 
 
 /* 17 Back-to-top

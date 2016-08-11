@@ -10,6 +10,7 @@
 /* TABLE OF CONTENTS
 	1) Reset
 	2) Overwrite Bootstrap
+	2) Help classes
 	3) Parallax
 	4) Breadcrumbs
 	4) Pre-loader
@@ -37,6 +38,7 @@ body {
   font-family: "HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
   font-size: 100%;
   color: #535353;
+  height: 100%;
 }
 *,*:before,*:after {
     -webkit-box-sizing: border-box;
@@ -144,6 +146,38 @@ section {
 	background-color: #fff;
 	border-bottom: 1px solid #d6d6d6;
 	min-height: 320px;
+}
+
+/* 2 Helper classes
+----------------------------------------------------------------------------- */
+.title {
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
+	margin-bottom: 20px;
+}
+.slog {
+	font-size: 16px;
+	max-width: 420px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+.bg-dark {
+	background: #f4f4f4;
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+}
+
+/* 3 Parallax
+----------------------------------------------------------------------------- */
+.parallax {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* 4 Breadcrumbs
@@ -469,21 +503,10 @@ section {
 	margin-top: 100px;
 }
 
-/* Parallax 
------------------------------------------------------------------------------*/
-.parallax {
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 /* 10 inner (Info)
 ----------------------------------------------------------------------------- */
 #inner-section {
-	background: url(../tmp_src/img-1.jpg) center;
+	background: url(../img/img-1.jpg) center;
 }
 .intermediate-container .subheading h4 {
 	color: #ffffff;
@@ -560,44 +583,41 @@ section {
 #clients.container{
 	position: relative;
 }
-.rm-r-p{
-	padding-right: 0;
-}
-.rm-r-l{
-	padding-left: 0;
-}
 .index-footer{
     padding-top: 0px;
     padding-right: 20px;
     padding-bottom: 0px;
     padding-left: 20px;
     position: relative;
-    margin-top: 67px;
+    margin-top: 66px;
     margin-right: auto;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     margin-left: auto;
 }
 .footer-nav{
 	text-align: left;
 	font-family: 幼圆,Microsoft Yahei,"宋体";
+	margin-bottom: 30px;
 }
 .footer-nav dt{
-	font-size: 16px;
+	font-size: 18px;
+	height: 18px;
 	color:#333;
 	font-weight: 300;
 	margin-bottom: 10px;
 	padding-left: 16px;
 	line-height: 1;
-	border-left-width: 3px;
-	border-left-style: solid;
-	border-left-color: rgb(216,216,216);
+	border-left: 3px solid #d8d8d8;
 }
 .footer-nav dd{
 	line-height: 2;
-	font-size:13px;
+	font-size:14px;
 	margin-bottom: 4px;
 	color: #666;
 	margin-left: 20px;
+}
+.footer-nav .blank {
+	border-left: 3px solid transparent;
 }
 .link-icons{
 	padding-left: 0!important;
@@ -666,48 +686,30 @@ section {
 	margin-left:-60px;
 	bottom:50px;
 }
-.address-text{
-    	font-size: 12px;
-    	color: #818181;
-    	clear: both;
-    	margin-left: 20px;
-    	padding-top: 10px;
-    	border-top-width: 1px;
-    	border-top-style: solid;
-    	border-top-color: rgb(229, 229, 229);
-    	width: 190px;
-    	padding-bottom: 5px;
-    	position: relative;
-    	top: 6px;
+/*-- footer --*/
+.footer {
+	background: #383838;
+	color:#fcfcfc;
 }
-.address-full{
-	font-size: 11px;
-    	color: #818181;
-    	clear: both;
-    	margin-left: 20px;
-    	padding-top: 0px;
-    	padding-bottom: 5px;
-    	position: relative;
-    	top: 6px;
+.footer-div {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-.contact-text{
-    	font-size: 12px;
-    	color: #818181;
-    	clear: both;
-    	margin-left: 20px;
-    	padding-top: 10px;
-    	width: 190px;
-    	padding-bottom: 5px;
-    	position: relative;
-    	top: 6px;
+.footer-div dl {
+	margin-bottom: 0px;
 }
-.lang-img{
+.footer-div dd {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.footer .lang-img{
 	position:relative;
-	height:11px;
+	height:20px;
 	width:auto;
 	left: 3%;
 	margin-top:-5%;
-
 }
 
 /* 18 Responsive
