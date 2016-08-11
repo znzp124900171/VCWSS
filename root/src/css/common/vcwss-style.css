@@ -506,7 +506,7 @@ section {
 /* 10 inner (Info)
 ----------------------------------------------------------------------------- */
 #inner-section {
-	background: url(../img/img-1.jpg) center;
+	background: url(../../img/img-1.jpg) center;
 }
 .intermediate-container .subheading h4 {
 	color: #ffffff;
