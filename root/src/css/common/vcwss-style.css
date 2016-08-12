@@ -34,11 +34,16 @@
 
 /* 1 Reset
 ----------------------------------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+}
 body {
   font-family: "HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
   font-size: 100%;
   color: #535353;
   height: 100%;
+  margin: 0 0 39px;
 }
 *,*:before,*:after {
     -webkit-box-sizing: border-box;
@@ -202,6 +207,9 @@ section {
 	padding-left: 0px;
 	display: inline-block;
 }
+.breadcrumbs-path ol li {
+	display: inline-block;
+}
 .breadcrumbs-list {
 	direction: ltr;
 	list-style: none;
@@ -213,7 +221,7 @@ section {
 	content: "\f105";
 	display: inline-block;
 }
-.breadcrumbs-item > a > span {
+.breadcrumbs-item span {
 	padding-left: 10px;
 	font-size: 14px;
 	font-family: inherit;
@@ -690,6 +698,12 @@ section {
 .footer {
 	background: #383838;
 	color:#fcfcfc;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 39px;
+	overflow: hidden;
 }
 .footer-div {
 	text-align: center;

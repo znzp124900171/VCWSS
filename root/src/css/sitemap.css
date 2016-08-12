@@ -41,9 +41,6 @@
 	text-align: inherit;
 }
 /*-- 分类 --*/
-#sitemap-container {
-	position: relative;
-}
 #sitemap-container section {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -53,19 +50,6 @@
 	margin-right: auto;
 	width: 100%;
 }
-.category-title {
-	font-size: 28px;
-    line-height: 1.71429;
-    font-weight: 300;
-    letter-spacing: 0em;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #d6d6d6;
-    display: block;
-    margin: 0 0 20px 0;
-}
-.category-title a {
-	color: #333;
-}
 .category-sections {
 	margin: 10px 0 45px;
 }
@@ -74,7 +58,6 @@
 	margin-bottom: 26px;
 	position: relative;
 	vertical-align: top;
-	width: 245px;
 	z-index: 1;
 }
 .category-section-title {
