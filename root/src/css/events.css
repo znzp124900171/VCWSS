@@ -8,11 +8,13 @@
 	border-bottom: 1px solid #CFCFCF;
 	min-height:800px;
 	max-width:1108px;
-	margin:30px auto;
+	margin:0px auto;
+	margin-bottom: 30px;
 }
-.sidebar-wrapper {
-	text-align: middle;
-	padding-left: 15%;
+.content-wrapper ul {
+	margin-top: 60px;
+	list-style: none;
+	padding-left: 0px;
 }
 h3.top-shop {
 	color: #999;
@@ -20,13 +22,6 @@ h3.top-shop {
 	margin-bottom: 30px;
 	font-size: 12px;
 	font-weight: normal;
-}
-.sidebar-catalog {
-	font-weight: 30;
-	font-size: 16px;
-	margin: 40px 0;
-	color: #333;
-	letter-spacing: 1px;
 }
 .articles-container {
 	position: relative;
@@ -39,9 +34,26 @@ h3.top-shop {
 	padding-bottom: 52px;
 	border-bottom: 1px dotted #CCC;
 }
-h2.article-title {
+.index-author-comments-date {
+	color: #aaa;
+}
+.archive {
+	color: #337ab7;
+}
+h3.article-title {
 	margin-bottom: 15px;
 }
 .article-image {
 	padding: 35px 0;
+}
+.article-image img {
+	width: 100%;
+	height: 360px;
+	overflow: hidden;
+}
+.article p {
+	font-size: 14px;
+}
+.btn-readmore {
+	margin-top: 20px;
 }

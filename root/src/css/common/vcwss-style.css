@@ -29,6 +29,7 @@
 	17) Back-to-top
 	18) Responsive
 	19) Components
+	20) Sidebar
 	20) Affix
 */
 
@@ -143,14 +144,6 @@ section {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #fff;
-}
-
-/* 2 Overwrite Bootstrap
------------------------------------------------------------------------------ */
-.jumbotron {
-	background-color: #fff;
-	border-bottom: 1px solid #d6d6d6;
-	min-height: 320px;
 }
 
 /* 2 Helper classes
@@ -502,13 +495,6 @@ section {
 	.carousel-text p{
 		display: none;
 	}
-}
-
-/* Sidebar
------------------------------------------------------------------------------ */
-
-.sidebar {
-	margin-top: 100px;
 }
 
 /* 9 Portfolio
@@ -867,10 +853,52 @@ section {
 
 
 
+/* 20 Sidebar
+------------------------------------------------------------------------*/
+.nav>li {
+	position: relative;
+	display: block;
+}
+.sidebar {
+	margin-top: 100px;
+}
+.sidebar .nav > li > a:focus,
+.sidebar .nav > li > a:hover {
+	padding-left: 19px;
+	text-decoration: none;
+	color: #f05050;
+	border-left: 1px solid #f05050;
+	background-color: transparent;
+}
+.sidebar .nav > .active:focus > a,
+.sidebar .nav > .active:hover > a,
+.sidebar .nav > .active > a  {
+	font-weight: 700;
+	padding-left: 18px;
+	color: #f05050;
+	border-left: 2px solid #f05050;
+	background-color: transparent;
+}
 
-
-
-
+.sidebar .nav .nav {
+	display: none;
+	padding-bottom: 10px;
+}
+.sidebar .nav>.active>ul {
+	display: block;
+}
+.sidebar .nav .nav>li>a {
+	padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.sidebar .nav>li>a {
+	display: block;
+    padding: 4px 20px;
+    color: #767676;
+}
 
 
 .affix{

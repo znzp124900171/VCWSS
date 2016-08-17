@@ -1,12 +1,5 @@
 /* Navibar
 ------------------------------------------------------------------------*/
-
-
-
-
-
-
-
 h1 {
 	font-family: fzltxh,NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
 	font-size: 18px;
@@ -103,61 +96,6 @@ animation: flipUp 0.4s ease-in-out 0s forwards;
 80% {transform: perspective(350px) rotateX(-15deg);}
 100% {transform: perspective(350px) rotateX(0deg); /* box-shadow:0 15px 10px -15px rgba(0,0,0,0.4); */}
 }
-
-
-
-
-/* Sidebar
-------------------------------------------------------------------------*/
-.nav>li {
-	position: relative;
-	display: block;
-}
-
-#sidebar .nav > li > a:focus,
-#sidebar .nav > li > a:hover {
-	padding-left: 19px;
-	text-decoration: none;
-	color: #f05050;
-	border-left: 1px solid #f05050;
-	background-color: transparent;
-}
-#sidebar .nav > .active:focus > a,
-#sidebar .nav > .active:hover > a,
-#sidebar .nav > .active > a  {
-	font-weight: 700;
-	padding-left: 18px;
-	color: #f05050;
-	border-left: 2px solid #f05050;
-	background-color: transparent;
-}
-
-#sidebar .nav .nav {
-	display: none;
-	padding-bottom: 10px;
-}
-#sidebar .nav>.active>ul {
-	display: block;
-}
-#sidebar .nav .nav>li>a {
-	padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 30px;
-    font-size: 12px;
-    font-weight: 400;
-}
-#sidebar .nav>li>a {
-	display: block;
-    padding: 4px 20px;
-    color: #767676;
-}
-
-
-
-
-
-
-
 
 
 #vcwss .container:after {
