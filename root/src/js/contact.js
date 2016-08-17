@@ -5,6 +5,11 @@ function sendForm() {
 	var thema=document.getElementById("formThema").value;
 	var title=document.getElementById("formTitle").value;
 	var contents=document.getElementById("formContents").value;
+
+	if(name === "") {
+		
+	}
+
 	alert('消息已成功发送');
 	ref.set({
 		"Name" : name,
