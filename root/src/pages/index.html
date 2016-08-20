@@ -46,105 +46,90 @@
     </div>
     <!-- End Preloader -->
 
-    <!-- Tagline -->
-      <div class="tagline hidden-xs">
+    <!-- Header -->
+    <nav class="navbar navbar-default navbar-custom sticky" role="navigation">
         <div class="container">
-            <div class="pull-left">
-              <div class="phone">
-                <a href="tel:0123456789">
-                  <i class="fa fa-phone"></i> +49 1733432796
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vcwss-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="#">
+              <img alt="Brand" src="../img/logo.png" class="img-responsive logo">
+            </a>
+          </div><!-- /.navbar-header-->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="vcwss-navbar-collapse">
+            <ul class="nav navbar-nav navbar-left">
+              <li class="active"><a href="#home">首页</a></li>
+              <li><a href="#">活动</a></li>
+              <li><a href="#">新闻</a></li>
+              <li class="dropdown-custom">
+                  <a href="#">实用信息<span class="caret"></span></a>
+                  <div class="submenu">
+                      <ul class="submenu-dropdown">
+                        <li><a href="#">新生手册</a></li>
+                        <li><a href="#">城市信息</a></li>
+                        <li><a href="#">下载资源</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="dropdown-custom">
+                  <a href="#">关于学联<span class="caret"></span></a>
+                  <div class="submenu">
+                      <ul class="submenu-dropdown">
+                          <li><a href="#">学联介绍</a></li>
+                          <li><a href="#">组织架构</a></li>
+                          <li><a href="#">学联画廊</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="dropdown-custom">
+                  <a href="#">联系我们<span class="caret"></span></a>
+                  <div class="submenu">
+                      <ul class="submenu-dropdown">
+                        <li><a href="#">联系方式</a></li>
+                        <li><a href="#">常见问题</a></li>
+                      </ul>
+                  </div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left nav-language">
+              <li>
+                <a href="#">
+                  中文<img src="../img/China.png" class="lang-img">
                 </a>
-              </div>
-              <div class="email">
-                <a href="mailto:info@vcwss.de">
-                  <i class="fa fa-envelope"></i> info@vcwss.de
+              </li>
+              <li>
+                <a href="#">
+                  DE<img src="../img/Germany.png" class="lang-img">
                 </a>
-              </div>
-            </div>
-            <div class="pull-right">
-              <div type="button" class="sign-up">
-                <i class="fa fa-user"></i>
-                <a href="#">注册</a>
-              </div>
-              <div type="button" class="sign-in">
-                <span class="glyphicon glyphicon-log-in"></span>
+              </li>
+            </ul>
+            <div class="nav navbar-nav navbar-right">
+              <div class="signup">
                 <a href="#">登陆</a>
               </div>
             </div>
-        </div><!-- /.container-->
-      </div><!-- /.tagline-->
-      <!-- End Tagline -->
+            <form class="nav navbar-nav navbar-right navbar-form"  method="get" action="http://www.google.com/search" target="_blank" role="search" >
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" style="height:34px">
+                    <input type="hidden" name="domains" value="stu-cn.de">
+                    <input type="hidden" name="sitesearch" value="stu-cn.de">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><span class=" glyphicon glyphicon-search"></span></button>
+                  </span>
+                </div>
+            </form>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+    <!-- /Header -->
 
-      <!-- Header -->
-      <nav class="navbar navbar-default navbar-custom sticky" role="navigation">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vcwss-navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand logo" href="#">
-                  <img alt="Brand" src="../img/logo.png" class="img-responsive logo">
-                </a>
-            </div><!-- /.navbar-header-->
-            <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="vcwss-navbar-collapse">
-                <ul class="nav navbar-nav navbar-left">
-                  <li><a href="#home">首页</a></li>
-                  <li><a href="#">活动</a></li>
-                  <li><a href="#">新闻</a></li>
-                  <li class="dropdown-custom">
-                      <a href="#">实用信息<span class="caret"></span></a>
-                      <div class="submenu">
-                          <ul class="submenu-dropdown">
-                            <li><a href="#">新生手册</a></li>
-                            <li><a href="#">城市信息</a></li>
-                            <li><a href="#">下载资源</a></li>
-                          </ul>
-                      </div>
-                  </li>
-                  <li class="dropdown-custom">
-                      <a href="#">关于学联<span class="caret"></span></a>
-                      <div class="submenu">
-                          <ul class="submenu-dropdown">
-                              <li><a href="#">学联介绍</a></li>
-                              <li><a href="#">组织架构</a></li>
-                              <li><a href="#">学联画廊</a></li>
-                          </ul>
-                      </div>
-                  </li>
-                  <li class="dropdown-custom">
-                      <a href="#">联系我们<span class="caret"></span></a>
-                      <div class="submenu">
-                          <ul class="submenu-dropdown">
-                            <li><a href="#">联系方式</a></li>
-                            <li><a href="#">常见问题</a></li>
-                          </ul>
-                      </div>
-                    </li>
-                  <li id="nav-language"></li>
-                </ul>
-                <form class="nav navbar-nav navbar-right navbar-form"  method="get" action="http://www.google.com/search" target="_blank" role="search" >
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" style="height:34px">
-                        <input type="hidden" name="domains" value="stu-cn.de">
-                        <input type="hidden" name="sitesearch" value="stu-cn.de">
-                      <span class="input-group-btn">
-                        <button class="btn btn-default" type="submit"><span class=" glyphicon glyphicon-search"></span></button>
-                      </span>
-                    </div>
-                </form>
-              </div><!-- /.navbar-collapse -->
-          </div><!-- /.container -->
-      </nav>
-      <!-- /Header -->
-
-    <!-- HOME
-      ================================================== -->
 
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000">
       <!-- Indicators -->
@@ -399,139 +384,76 @@
     </section>
     <!-- / Portfolio -->
 
-    <section>
-      <!-- Clients -->
-      <div id="clients" class="text-center">
-        <div class="container">
+
+    <div class="footer-bg-grey">
+      <!-- pre-Footer -->
+      <div class="pre-footer container">
           <div class="row">
-            <div class="col-md-12">
-              <h3 class="title">合作伙伴</h3>
+            <div class="col-sm-6 footer-nav">
+              <dl class="col-sm-5">
+                <dt>友情链接</dt>
+                <dd><a href="http://frankfurt.china-consulate.org/chn/">中国驻法兰克福总领事馆</a></dd>
+                <dd><a href="#">慕尼黑学联</a></dd>
+              </dl>
+              <dl class="col-sm-5">
+                <dt class="partner"></dt>
+                <dd>飞诺旅游</dd>
+                <dd>中国银行</dd>
+              </dl>
             </div>
-            <!-- /col --> </div>
-          <!-- /row -->
-          <div class="row">
-            <div class="partners text-center div-link" onClick="window.location.href='http://www.google.com'">
-              <div class="col-sm-4 col-md-2 partner">
-                <img src="../img/clients/1.png" class="clients"  alt="Partner 1"></div>
-              <div class="col-sm-4 col-md-2 partner div-link" onClick="window.location.href='http://www.google.com'">
-                <img src="../img/clients/2.png" class="clients"  alt="Partner 2"></div>
-              <div class="col-sm-4 col-md-2 partner div-link" onClick="window.location.href='http://www.google.com'">
-                <img src="../img/clients/3.png" class="clients"  alt="Partner 3"></div>
-              <div class="col-sm-4 col-md-2 partner div-link" onClick="window.location.href='http://www.google.com'">
-                <img src="../img/clients/4.png" class="clients"  alt="Partner 4"></div>
-              <div class="col-sm-4 col-md-2 partner div-link" onClick="window.location.href='http://www.google.com'">
-                <img src="../img/clients/5.png" class="clients"  alt="Partner 5"></div>
-              <div class="col-sm-4 col-md-2 partner div-link" onClick="window.location.href='http://www.google.com'">
-                <img src="../img/clients/6.png" class="clients"  alt="Partner 6"></div>
+            <div class="col-sm-2 footer-nav">
+              <dl>
+                <dt>资源</dt>
+                <dd>
+                  <a href="resource/resource.html">文档</a>
+                </dd>
+                <dd>
+                  <a href="resource/download.html">下载</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-sm-2 footer-nav">
+                <dl>
+                  <dt>关于我们</dt>
+                  <dd>
+                    <a href="vcwss/vcwss.html">学联简介</a>
+                  </dd>
+                  <dd>
+                    <a href="contact/contac.html">联系我们</a>
+                  </dd>
+                  <dd>
+                    <a href="#">合作伙伴</a>
+                  </dd>
+                </dl>
+            </div>
+            <div class="col-sm-2 footer-nav link-icons">
+              <dl>
+                <dt>关注我们</dt>
+                <dd class="link-icon">
+                  <span class="fa fa-weixin">
+                  </span>
+                  <img src="#" alt="微信二维码">
+                </dd>
+                <dd class="link-icon">
+                  <span class="fa fa-youtube">
+                  </span>
+                </dd>
+              </dl>
             </div>
           </div>
-          <!-- end row --> </div>
-        <!-- container --> </div>
-      <!-- / Clients -->
-    </section>
-
-      <!-- bottom-container -->
-      <div class="bg-dark">
-        <!-- pre-Footer -->
-        <div class="pre-footer container">
-            <div class="row index-footer">
-              <div class="col-sm-6 footer-nav">
-                <dl class="col-sm-5">
-                  <dt>友情链接</dt>
-                  <dd><a href="#">中国驻法兰克福领事馆</a></dd>
-                  <dd><a href="#">慕尼黑学联</a></dd>
-                </dl>
-                <dl class="col-sm-5">
-                  <dt class="blank"></dt>
-                  <dd>飞诺旅游</dd>
-                  <dd>中国银行</dd>
-                </dl>
-              </div>
-              <div class="col-sm-2 footer-nav">
-                <dl>
-                  <dt>资源</dt>
-                  <dd>
-                    <a href="#">文档</a>
-                  </dd>
-                  <dd>
-                    <a href="#">下载</a>
-                  </dd>
-                  <dd>
-                    <a href="#">百科</a>
-                  </dd>
-                </dl>
-              </div>
-              <div class="col-sm-2 footer-nav">
-                  <dl>
-                    <dt>关于我们</dt>
-                    <dd>
-                      <a href="#">学联团队</a>
-                    </dd>
-                    <dd>
-                      <a href="#">联系我们</a>
-                    </dd>
-                    <dd>
-                      <a href="#">合作伙伴</a>
-                    </dd>
-                  </dl>
-              </div>
-              <div class="col-sm-2 footer-nav link-icons">
-                <dl>
-                  <dt>关注我们</dt>
-                  <dd class="link-icon">
-                    <span class="fa fa-weixin">
-                    </span>
-                    <img src="#" alt="微信二维码">
-                  </dd>
-                  <dd class="link-icon">
-                    <span class="fa fa-youtube">
-                    </span>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <!-- ./index-footer -->
-        </div>
-        <!-- ./pre-Footer -->
-
-        <!-- Footer -->
-        <footer class="footer">
-          <!-- Footer-copyright -->
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-9 col-md-10 col-xs-12">
-                <div class="col-sm-5 col-md-3 col-xs-12 footer-div" >
-                  <span>©2016 VCWSS All Rights Reserved.</span>
-                </div>
-                <div class="col-sm-7 col-md-4 col-xs-12 footer-div">
-                  <dl>
-                    <dd><a href="#"><u>Privacy Policy</u></a></dd>|
-                    <dd><a href="#"><u>Terms of Service</u></a></dd>|
-                    <dd><a href="sitemap/sitemap.html"><u>Site Map</u></a></dd>
-                  </dl>
-                </div>
-                <div class="col-md-4 hidden-print hidden-xs hidden-sm"></div>
-              </div>
-              <div class="col-md-2 col-sm-3 col-xs-12 footer-div">
-                <dl>
-                  <dd>
-                    <a href="#">
-                      中文<img src="../img/China.png" class="lang-img">
-                    </a>
-                  </dd>
-                  <dd>
-                    <a href="#">
-                      DE<img src="../img/Germany.png" class="lang-img">
-                    </a>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <!-- /Footer -->
+          <!-- ./index-footer -->
       </div>
-      <!-- ./bottom-container -->
+      <!-- ./pre-Footer -->
+
+      <!-- Footer -->
+      <div class="footer-grey container">
+          <span class="pull-left">©2016-2017 VCWSS All Rights Reserved.</span>
+          <span class="pull-left"><a href="#">隐私政策</a></span>
+          <span class="pull-left"><a href="#">服务条款</a></span>
+          <span class="pull-left"><a href="sitemap/sitemap.html">网站地图</a></span>
+      </div>
+      <!-- /Footer -->
+    </div>
 
         <!-- Back to top -->
         <a href="#" class="back-to-top">
