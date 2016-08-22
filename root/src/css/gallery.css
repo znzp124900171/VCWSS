@@ -1,0 +1,38 @@
+.content-wrapper {
+	border-top: 1px solid #F1F1F1;
+	border-right: 1px solid #E7E6E6;
+	border-left: 1px solid #E7E6E6;
+	background: white;
+	padding-bottom: 30px;
+	border-radius: 6px;
+	border-bottom: 1px solid #CFCFCF;
+	min-height:800px;
+	max-width:1108px;
+	margin:0px auto;
+	margin-bottom: 30px;
+}
+.content-wrapper ul {
+	margin-top: 60px;
+	list-style: none;
+	padding-left: 0px;
+}
+
+.gallery {
+	margin:0 5.5% 40px;
+	width: 89%;
+	padding-bottom: 50px;
+	border-bottom: 1px dotted #CCC;
+}
+
+.gallery-photos{
+	max-height: 10px;
+}
+h3.gallery-title {
+	margin-bottom: 30px;
+	font-family: "Microsoft Yahei", "宋体";
+}
+
+.btn-readmore {
+	margin-top: 40px;
+	width: 100px
+}
