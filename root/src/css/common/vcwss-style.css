@@ -141,7 +141,7 @@ section {
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 /* 2 Helper classes
@@ -388,7 +388,7 @@ section {
 /* 6 Home
 ----------------------------------------------------------------------------- */
 .carousel-section {
-    background: url("../img/img-1.jpg");
+    background: url("../img-1.jpg");
     overflow: hidden;
     padding: 180px 0px;
 }
@@ -622,9 +622,8 @@ section {
 /* footer
 ------------------------------------------------------------------------------*/
 /* -- pre-footer --*/
-.footer-bg-grey {
-	background: #f3f3f3;
-	border-top: 1px solid #eee;
+.footer-bg {
+	border-top: 1px solid #f3f3f3;
 }
 .pre-footer{
 	position: relative;
