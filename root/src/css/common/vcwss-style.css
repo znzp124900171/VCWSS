@@ -40,7 +40,7 @@ html {
 	min-height: 100%;
 }
 body {
-  font-family: "HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,”Hiragino Sans GB”,Simsun,sans-self;
   font-size: 100%;
   color: #535353;
 }
@@ -285,10 +285,8 @@ section {
 	display: block;
 	color: #555;
     font-size: 15px;
-    font-weight: 400;
     border-top: 4px solid transparent;
     text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
 }
 .navbar-custom .navbar-nav>.active>a, .navbar-custom .navbar-nav>.active>a:hover, .navbar-custom .navbar-nav>.active>a:focus,
 .navbar-custom .navbar-nav>.open>a, .navbar-custom .navbar-nav>.open>a:hover, .navbar-custom .navbar-nav>.open>a:focus,
@@ -349,18 +347,14 @@ section {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.nav-language {
-}
 .nav-language>li {
 	display: table !important;
 	height: 54px;
 }
 .nav-language>li>a {
-	border-top: 0px !important;
 	font-size: 12px !important;
 	display: table-cell !important;
-	vertical-align: bottom;
-	padding-bottom: 14.5px;
+	vertical-align: middle;
 }
 .nav-language>li>a>img {
 	padding-left: 3px;
@@ -858,8 +852,9 @@ section {
     font-weight: 400;
 }
 .sidebar .nav>li>a {
+	font-size: 14px;
 	display: block;
-    padding: 4px 20px;
+    padding: 4px 15px;
     color: #767676;
 }
 

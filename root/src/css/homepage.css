@@ -1,24 +1,29 @@
 .event-block-list ul {
 	list-style: none;
-	padding-left: 20px;
+	padding-left: 0px;
 }
-.event-block-list ul li h4 {
-	height: 60px;
+.img-wrapper {
+	height: 200px;
 }
 .event-block img{
 	display: block;
-	width: auto;
-	height: 180px;
+	width: 100%;
+	height: auto;
+	max-width: 360px;
+	max-height: 200px;
 	overflow: hidden;
 	text-align: center;
 }
 .event-block {
-	padding:auto 0px;
+	margin-bottom: 20px;
+	min-height: 335px;
+	max-height: 335px;
 }
 .title-block {
 	margin: 10px auto;
 	text-align: justify;
-	line-height: 1.733;
+	line-height: 1.7;
+	height: 60px;
 }
 .title-block a:hover {
 	border-bottom:1px solid #dddddf;
