@@ -42,7 +42,6 @@ html {
 body {
   font-family: Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,”Hiragino Sans GB”,Simsun,sans-self;
   font-size: 100%;
-  color: #535353;
 }
 *,*:before,*:after {
     -webkit-box-sizing: border-box;
@@ -141,7 +140,6 @@ section {
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #fafafa;
 }
 
 /* 2 Helper classes
