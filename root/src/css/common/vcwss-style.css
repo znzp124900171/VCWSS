@@ -830,10 +830,10 @@ section {
 .sidebar .nav > .active:focus > a,
 .sidebar .nav > .active:hover > a,
 .sidebar .nav > .active > a  {
-	font-weight: 700;
+	font-weight: 500;
 	padding-left: 18px;
 	color: #f05050;
-	border-left: 2px solid #f05050;
+	border-left: 1px solid #f05050;
 	background-color: transparent;
 }
 
@@ -857,8 +857,6 @@ section {
     padding: 4px 15px;
     color: #767676;
 }
-
-
 .affix{
 	top:0px;
 }
