@@ -412,8 +412,9 @@ section {
 .navbar-custom .navbar-langtxt{
 	display: none;
 }
-.navbar-hide{
-	display: none;
+.navbar-custom .inputbox{
+	margin-left:-30px;
+	transition: all 1s;
 }
 @media only screen and (max-width: 850px) and (min-width: 767px){
 	.navbar-custom .navbar-langtxt{
@@ -426,6 +427,22 @@ section {
 	.navbar-custom .nav-language>li>a {
 		display: none;
 	}
+}
+@media only screen and (max-width: 768px){
+		.navbar-custom .inputbox{
+			opacity:1 !important;
+			width: 200px !important;
+			margin-left:-30px !important;
+			transition: all .5s;
+		}
+		#SearchTxt{
+			display: none !important;
+		}
+		.navbar-form{
+			padding: 0px 30px;
+			border-top: 0px;
+			border-bottom: 0px;
+		}
 }
 /* 6 Home
 ----------------------------------------------------------------------------- */
@@ -820,12 +837,12 @@ section {
 ----------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
 	.navbar-custom .navbar-brand {
-		padding: 13px 15px 20px 15px;
-		margin-top: 17px;
+		padding: 10px 10px 10px 10px;
+		margin-top: -5px;
 		height: auto;
 	}
 	.navbar-custom .navbar-toggle {
-		margin: 23px 15px 23px 0px;
+		margin: 5px 15px 0px 0px;
 	}
 	.intro-title,.intermediate-container .heading h2{
 		font-size: 30px;

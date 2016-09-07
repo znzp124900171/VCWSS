@@ -9,12 +9,13 @@ var width = window.innerWidth
 || document.body.clientWidth;
 
 sTxt.onclick = function(){
-	if(sBox.style.display == 'none'){
+	if(sBox.style.width == '0px'){
 		sTxt.style.display = 'none';
 		log.style.display = 'none';
 		langTxt.style.display = 'none';
-		sBox.style.display = 'table';
 		lang.style.display = 'none';
+		sBox.style.opacity = '1';
+		sBox.style.width = 'auto';
 /*
 		if(lang.style.display == 'none'){
 			langTxt.style.display = 'none';
@@ -30,7 +31,8 @@ iBox.onclick = function(){
 }
 document.onclick = function(){
 	if(sTxt.style.display == 'none'){
-		sBox.style.display = 'none';
+		sBox.style.opacity = '0';
+		sBox.style.width = '0px';
 		sTxt.removeAttribute('style');
 		log.removeAttribute('style');
 		langTxt.removeAttribute('style');
