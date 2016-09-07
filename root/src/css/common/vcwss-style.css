@@ -415,9 +415,8 @@ section {
 	display: none;
 }
 .navbar-custom .inputbox{
-
 	margin-left:-30px;
-	transition: all .5s;
+	transition: all 1s;
 }
 @media only screen and (max-width: 850px) and (min-width: 767px){
 	.navbar-custom .navbar-langtxt{
@@ -435,7 +434,7 @@ section {
 		.navbar-custom .inputbox{
 			opacity:1 !important;
 			width: 200px !important;
-			margin-left:-30px;
+			margin-left:-30px !important;
 			transition: all .5s;
 		}
 		#SearchTxt{

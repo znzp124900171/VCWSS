@@ -15,7 +15,7 @@ sTxt.onclick = function(){
 		langTxt.style.display = 'none';
 		lang.style.display = 'none';
 		sBox.style.opacity = '1';
-		sBox.style.width = '300px';
+		sBox.style.width = 'auto';
 /*
 		if(lang.style.display == 'none'){
 			langTxt.style.display = 'none';
