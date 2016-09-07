@@ -319,6 +319,30 @@ section {
 	width: 100px;
 	transition: all .2s;
 }
+@media only screen and (max-width: 767px) {
+	.submenu {
+		display: none;
+		z-index: 100;
+		position: absolute;
+		margin-top: -1px;
+		top: 0px;
+		left: 100px;
+		width: 100px;
+		overflow: hidden;
+		box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+	}
+	.caret {
+	    display: inline-block;
+	    width: 0;
+	    height: 0;
+	    margin-left: 2px;
+	    vertical-align: middle;
+	    border-top: 4px solid transparent;
+	    border-bottom: 4px solid transparent;
+	    border-left: 4px solid;
+	}
+
+}
 .submenu-dropdown > li > a {
 	display: block;
 	height: 40px;
@@ -345,16 +369,16 @@ section {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.nav-language>li {
-	display: table !important;
+.navbar-custom .nav-language>li {
+	display: table;
 	height: 54px;
 }
-.nav-language>li>a {
+.navbar-custom .nav-language>li>a {
 	font-size: 12px !important;
-	display: table-cell !important;
+	display: table-cell;
 	vertical-align: middle;
 }
-.nav-language>li>a>img {
+.navbar-custom .nav-language>li>a>img {
 	padding-left: 3px;
 	height: 16px;
 }
@@ -376,6 +400,32 @@ section {
 }
 .navbar-custom .signup a:hover {
 	background: rgba(1,1,1,.1);
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+	.navbar .container{
+		width:100%;
+	}
+
+}
+.navbar-custom .navbar-langtxt{
+	display: none;
+}
+.navbar-hide{
+	display: none;
+}
+@media only screen and (max-width: 850px) and (min-width: 767px){
+	.navbar-custom .navbar-langtxt{
+		display: table;
+	}
+
+	.navbar-custom .nav-language>li {
+		display: none;
+	}
+	.navbar-custom .nav-language>li>a {
+		display: none;
+	}
 }
 /* 6 Home
 ----------------------------------------------------------------------------- */
