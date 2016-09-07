@@ -73,7 +73,7 @@ img {
     max-width: 100%;
 }
 h1,h2,h3,h4,h5,h6,p {
-    font-family: "HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 textarea {
     max-width: 100%;
@@ -141,7 +141,6 @@ section {
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #fafafa;
 }
 
 /* 2 Helper classes
