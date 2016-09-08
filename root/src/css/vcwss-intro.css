@@ -67,24 +67,24 @@
 #vcwss-team dd p {
 	font-size: 18px;
 }
-#vcwss-team dd span img {
+#vcwss-team dd span .team-pic-small {
 	width: 10%;
 	height: auto;
 	margin-top: 20px;
-	vertical-align: bottom;
+	margin-right: 20px;
+	vertical-align: top;
 	transition:all 0.5s ease-in 0.05s;
 }
-#vcwss-team dd .team-big-pic {
+#vcwss-team dd .team-pic-detail {
 	display: none;
 	position: relative;
+	margin-top: 20px;
 	width: 20%;
-}
-}
-#vcwss-team dd span img:hover .team-big-pic {
-	display: block;
-	width: 20%;
+	text-align: center;
 	transition: all 1s ease-in 0.5s ease-out 0.5s;
-	vertical-align: bottom;
+}
+#vcwss-team dd .team-pic-detail {
+
 }
 
 #tabs {
