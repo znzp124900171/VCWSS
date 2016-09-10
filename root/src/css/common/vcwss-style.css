@@ -38,10 +38,12 @@
 html {
 	position: relative;
 	min-height: 100%;
+	font-family: Helvetica,Arial,'Microsoft YaHei';
+  	font-size: 100%;
+  	color: #333;
 }
 body {
-  font-family: Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,”Hiragino Sans GB”,Simsun,sans-self;
-  font-size: 100%;
+  color: #535353;
 }
 *,*:before,*:after {
     -webkit-box-sizing: border-box;
@@ -72,7 +74,7 @@ img {
     max-width: 100%;
 }
 h1,h2,h3,h4,h5,h6,p {
-    font-family: "HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: Helvetica,Arial,'Microsoft YaHei';
 }
 textarea {
     max-width: 100%;

@@ -1,0 +1,255 @@
+.intro-banner {
+	position: relative;
+	padding-top: 30%;
+	color: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 4.2rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#banner-text {
+	padding: 6.77777778% 0;
+	max-width: 720px;
+	width: 85%;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+}
+.box-center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+}
+#vcwss-nav {
+	border-bottom: 0px;
+	vertical-align: baseline;
+}
+#vcwss-nav li {
+	text-align: center !important;
+	font-size: 18px;
+	font-weight: 500;
+	font: 300 14px/1em 'Open Sans', arial, sans-serif;
+	color: #666;
+	letter-spacing: 0.3em;
+}
+#vcwss-nav li a:hover {
+	background: transparent;
+}
+#vcwss-nav li:first-child {
+	text-align: right;
+}
+#vcwss-nav li:last-child {
+	text-align: left;
+}
+#vcwss-nav li a {
+	border: 0px;
+}
+
+#vcwss-nav .active a {
+	background: #fefefe;
+	border-bottom: 1px solid #f05050;
+}
+#vcwss-intro {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+#vcwss-intro p {
+	font-size: 18px;
+	line-height: 3rem;
+	text-indent: 2em;
+}
+#vcwss-intro #location {
+	margin: 60px auto;
+	width: 100%;
+	height: auto;
+}
+
+#vcwss-organisation .tree {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+#vcwss-organisation .tree ul {
+	padding-top: 20px;
+	position: relative;
+	transition: all 0.5s;
+}
+#vcwss-organisation .tree li {
+	float: left;
+	text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	transition: all 0.5s;
+}
+#vcwss-organisation .tree li:before .tree li:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%;
+	height: 20px;
+}
+#vcwss-organisation .tree li:after {
+	right: auto;
+	left: 50%;
+	border-left: 1px solid #ccc;
+}
+#vcwss-organisation .tree li:only-child:after .tree li:only-child:before {
+	display: none;
+}
+#vcwss-organisation .tree li:only-child {
+	padding-top: 0;
+}
+#vcwss-organisation .tree li:first-child::before, .tree li:last-child::after {
+    border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+#vcwss-organisation .tree li:last-child::before {
+    border-right: 1px solid #ccc;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+#vcwss-organisation .tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+/*Time to add downward connectors from parents*/
+#vcwss-organisation .tree ul ul::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 1px solid #ccc;
+    width: 0;
+    height: 20px;
+    margin-left: -1px;
+}
+#vcwss-organisation .tree li a {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #666;
+    font-family: arial, verdana, tahoma;
+    font-size: 11px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+#vcwss-organisation .tree li a:hover, .tree li a:hover+ul li a {
+    background: #c8e4f8;
+    color: #000;
+    border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+#vcwss-organisation .tree li a:hover+ul li::after, .tree li a:hover+ul li::before, .tree li a:hover+ul::before, .tree li a:hover+ul ul::before {
+    border-color: #94a0b4;
+}
+#vcwss-organisation li a.just-line {
+    display: none;
+}
+#vcwss-organisation a.just-line + ul {
+    padding-top: 74px;
+}
+#vcwss-organisation a.just-line + ul:before {
+    height: 74px;
+}
+#vcwss-team dd {
+	font-weight: 400;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+#vcwss-team dd .pic {
+	vertical-align: middle;
+	text-align: center;
+}
+#vcwss-team dd .content {
+	vertical-align: middle;
+	padding: 2%;
+	padding-top: 0;
+}
+#vcwss-team dd .content h1 {
+	font-size: 1.44rem;
+	font-weight: 700;
+	margin-bottom: .9rem;
+	color: #333;
+}
+#vcwss-team dd .content p {
+	font-size: inherit;
+	padding: 0;
+	color: #333;
+}
+#vcwss-team dd span {
+	padding: 0;
+}
+#vcwss-team dd .team-pic-small {
+	margin-top: 1.5rem;
+}
+#vcwss-team .popover {
+	padding: 0;
+}
+#vcwss-team .popover-title {
+	text-align: center;
+}
+#vcwss-team .popover-content {
+	text-align: center;
+	padding: 0;
+}
+@media screen and (min-width: 767px) {
+	#vcwss-team dd:nth-child(even) .content {
+		text-align: right;
+	}
+	#vcwss-team dd:nth-child(even) span {
+		float: right;
+	}
+	#vcwss-team dd:nth-child(even) .pic {
+		float: left;
+	}
+	#vcwss-team dd:nth-child(odd) .pic {
+		float: right;
+	}
+}
+@media screen and (max-width: 767px) {
+	#banner-text {
+		padding: 3% 0;
+		max-width: 420px;
+		width: 85%;
+		text-align: center;
+		background: rgba(0,0,0,0.3);
+	}
+	#banner-text h1 {
+		font-size: 1.5rem;
+	}
+	#vcwss-team dd:first-child {
+		margin-top: 20px;
+	}
+	.tab-content {
+		padding-top: 10px;
+	}
+	#vcwss-team dd .content {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#vcwss-team dd:nth-child(even) .pic {
+		max-width: 100%;
+		text-align: center;
+	}
+	#vcwss-team dd:nth-child(odd) .pic {
+		max-width: 100%;
+		text-align: center;
+	}
+}
