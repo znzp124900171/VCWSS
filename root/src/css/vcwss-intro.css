@@ -10,7 +10,7 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.intro-banner #banner-text {
+#banner-text {
 	padding: 6.77777778% 0;
 	max-width: 720px;
 	width: 85%;
@@ -30,11 +30,12 @@
 	vertical-align: baseline;
 }
 #vcwss-nav li {
-	text-align: center;
+	text-align: center !important;
 	font-size: 18px;
 	font-weight: 500;
 	font: 300 14px/1em 'Open Sans', arial, sans-serif;
 	color: #666;
+	letter-spacing: 0.3em;
 }
 #vcwss-nav li a:hover {
 	background: transparent;
@@ -167,65 +168,88 @@
 #vcwss-organisation a.just-line + ul:before {
     height: 74px;
 }
-
-#vcwss-team dd:nth-child(even) .pic {	
-	display: inline-block;
-	width: 30%;
-	vertical-align: middle;
-	padding: 2%;
-	float: left;
+#vcwss-team dd {
+	font-weight: 400;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
-#vcwss-team dd:nth-child(odd) .pic {
-	display: inline-block;
-	width: 30%;
+#vcwss-team dd .pic {
 	vertical-align: middle;
-	padding: 2%;
-	float: right;
+	text-align: center;
 }
 #vcwss-team dd .content {
-	display: inline-block;
-	width: 65%;
 	vertical-align: middle;
-	padding: 5%;
+	padding: 2%;
+	padding-top: 0;
 }
 #vcwss-team dd .content h1 {
-	font-weight: 600;
+	font-size: 1.44rem;
+	font-weight: 700;
+	margin-bottom: .9rem;
+	color: #333;
 }
-#vcwss-team dd p {
-	font-size: 18px;
+#vcwss-team dd .content p {
+	font-size: inherit;
+	padding: 0;
+	color: #333;
 }
-#vcwss-team dd span .team-pic-small {
-	width: 10%;
-	height: auto;
-	margin-top: 20px;
-	margin-right: 20px;
-	vertical-align: top;
-	transition:all 0.5s ease-in 0.05s;
+#vcwss-team dd span {
+	padding: 0;
 }
-#vcwss-team dd .team-pic-detail {
-	display: none;
-	position: absolute;
-	margin-top: 20px;
-	width: 20%;
+#vcwss-team dd .team-pic-small {
+	margin-top: 1.5rem;
+}
+#vcwss-team .popover {
+	padding: 0;
+}
+#vcwss-team .popover-title {
 	text-align: center;
-	transition: all 1s ease-in 0.5s ease-out 0.5s;
 }
-#vcwss-team dd .team-pic-detail {
-
+#vcwss-team .popover-content {
+	text-align: center;
+	padding: 0;
 }
-
-#tabs {
-
+@media screen and (min-width: 767px) {
+	#vcwss-team dd:nth-child(even) .content {
+		text-align: right;
+	}
+	#vcwss-team dd:nth-child(even) span {
+		float: right;
+	}
+	#vcwss-team dd:nth-child(even) .pic {
+		float: left;
+	}
+	#vcwss-team dd:nth-child(odd) .pic {
+		float: right;
+	}
 }
-@media screen and (max-width: 800px) {
-	#vcwss-team dd .pic {
-		display:block;
-		width: 80%;
-		margin: auto;
+@media screen and (max-width: 767px) {
+	#banner-text {
+		padding: 3% 0;
+		max-width: 420px;
+		width: 85%;
+		text-align: center;
+		background: rgba(0,0,0,0.3);
+	}
+	#banner-text h1 {
+		font-size: 1.5rem;
+	}
+	#vcwss-team dd:first-child {
+		margin-top: 20px;
+	}
+	.tab-content {
+		padding-top: 10px;
 	}
 	#vcwss-team dd .content {
-		display:block;
-		width: 100%;
-		margin: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#vcwss-team dd:nth-child(even) .pic {
+		max-width: 100%;
+		text-align: center;
+	}
+	#vcwss-team dd:nth-child(odd) .pic {
+		max-width: 100%;
+		text-align: center;
 	}
 }

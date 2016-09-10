@@ -2,20 +2,17 @@ function activaTab(tab){
     $('.nav-tabs a[href="#' + tab + '"]').tab('show');
 };
 
-$(".team-pic-small").click(function(event) {
-	var offset = $(event.target).offset();
-	var path = $(this).src;
-	var name = $(this).attr("alt");
-	var title = $(this).data('title');
-
-	$(".team-pic-detail h4").html('<h4>'+name+'&nbsp<small>'+title+'</small></h4>')
-	$(".team-pic-detail").css({
-		top: offset.bottom,
-		left: offset.left
-	});
-	$(".team-pic-detail img").attr('src', path);
-	$(".team-pic-detail").toggle("slow");
-
-	console.log(name);
+$('[data-toggle="popover"]').popover({
+	html:true,
+	placement: 'top',
+	trigger: 'click',
+	content: function(){
+		var name = $(this).data().name;
+		var content_wrapper = ['<img src="../../img/team-1.jpg">','<h5>',name,'</h5>'].join('');
+		return content_wrapper;
+	}
 });
+
+
+console.log($('[data-toggle="popover"]').data().name);
 activaTab('vcwss-team');
