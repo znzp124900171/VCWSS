@@ -15,4 +15,4 @@ $('[data-toggle="popover"]').popover({
 });
 
 
-activaTab('vcwss-team');
+activaTab('vcwss-intro');

@@ -1,3 +1,7 @@
+section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 .intro-banner {
 	position: relative;
 	padding-top: 30%;
@@ -55,18 +59,25 @@
 	border-bottom: 1px solid #f05050;
 }
 #vcwss-intro {
-	padding-left: 5%;
-	padding-right: 5%;
 }
 #vcwss-intro p {
-	font-size: 18px;
-	line-height: 3rem;
+	font-size: inherit;
+	line-height: 2rem;
 	text-indent: 2em;
 }
 #vcwss-intro #location {
-	margin: 60px auto;
 	width: 100%;
 	height: auto;
+}
+#vcwss-namecard {
+	width: 100%;
+	margin-top: 60px;
+	vertical-align: middle;
+	height: 15rem;
+	display: table;
+}
+#vcwss-namecard p {
+	text-indent: 0;
 }
 
 #vcwss-organisation .tree {
