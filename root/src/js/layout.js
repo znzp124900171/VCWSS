@@ -4,9 +4,17 @@ var iBox=document.getElementById('inputBox');
 var lang=document.getElementById('language');
 var log=document.getElementById('log');
 var langTxt=document.getElementById('languageTxt');
+var logLayer=document.getElementById('loginDiv');
+var logBox=document.getElementById('Form');
 var width = window.innerWidth
 || document.documentElement.clientWidth
 || document.body.clientWidth;
+
+
+log.onclick = function(){
+	logLayer.style.display = 'block';
+		event.cancelBubble=true;
+}
 
 sTxt.onclick = function(){
 	if(sBox.style.width == '0px'){
@@ -29,6 +37,9 @@ sTxt.onclick = function(){
 iBox.onclick = function(){
 	event.cancelBubble=true;
 }
+logBox.onclick=function(){
+	event.cancelBubble=true;
+}
 document.onclick = function(){
 	if(sTxt.style.display == 'none'){
 		sBox.style.opacity = '0';
@@ -45,5 +56,8 @@ document.onclick = function(){
 		}else{
 			lang.style.display = 'table';
 		}*/
+	}
+	if(logLayer.style.display == 'block'){
+		logLayer.style.display = 'none';
 	}
 }
