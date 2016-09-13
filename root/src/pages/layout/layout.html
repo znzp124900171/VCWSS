@@ -27,6 +27,9 @@
 	    <!-- Global styles -->
 	    <link rel="stylesheet" type="text/css" href="../../css/common/vcwss-style.css">
 	    <link href="../../css/common/red.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="../../css/normalize.css">
+    	<link rel="stylesheet" href="../../css/login.css">
 	    <!-- Custom styles for this page -->
 
 	</head>
@@ -39,6 +42,7 @@
 	    <!-- End Preloader -->
 
 	    <!-- Header -->
+
 	    <nav class="navbar navbar-default navbar-custom sticky" role="navigation">
 	        <div class="container">
 	          <!-- Brand and toggle get grouped for better mobile display -->
@@ -101,7 +105,7 @@
 	            </ul>
 	            <ul id="log" class="nav navbar-nav navbar-right">
 	              	<li class="signup">
-	                	<a href="../user/login.html">登陆</a>
+	                	<a>登陆</a>
 	              	</li>
 	            </ul>
 	            <form id="SearchBox" class="nav navbar-nav navbar-right navbar-form inputbox"  method="get" action="http://www.google.com/search" target="_blank" role="search" style="opacity:0;width:0px;">
@@ -134,17 +138,65 @@
 	        </div><!-- /.container -->
 	    </nav>
 	    <!-- /Header -->
+	    <div id="loginDiv" style="display:none;">
+			<div id="Form" class="form loginBox">
+				<ul class="tab-group">
+					<li class="tab active"><a href="#login">登录</a></li>
+					<li class="tab"><a href="#signup">注册</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="login">   
+						<h1>欢迎回来</h1>
+						<form action="/" method="post">
+							<div class="field-wrap">
+								<label>
+							  	电子邮件地址/用户名<span class="req">*</span>
+								</label>
+								<input type="email"required autocomplete="off"/>
+							</div>
+							<div class="field-wrap">
+								<label>
+						  		密码<span class="req">*</span>
+								</label>
+								<input type="password"required autocomplete="off"/>
+							</div>
 
-	    <!-- breadcrumb -->
-	    <div class="container">
-            <ol class="breadcrumb">
-            	<li><a href="#" class="fa fa-home"></a></li>
-                <li><a href="#">一级导航</a></li>
-                <li class="active">二级导航</li>
-            </ol>
-	    </div>
-	    <!-- /breadcrumb -->
+							<p class="forgot"><a href="#">忘记密码？</a></p>
 
+							<button class="button button-block"/>登录</button>
+
+						</form>
+					</div>
+					<div id="signup">
+						<h1>注册您的账户</h1>
+						<form action="/" method="post">
+							<div class="field-wrap">
+								<label>
+					  			账户名<span class="req">*</span>
+								</label>
+								<input type="text" required autocomplete="off" />
+							</div>
+							<div class="field-wrap">
+								<label>
+					  			电子邮件地址<span class="req">*</span>
+								</label>
+								<input type="email"required autocomplete="off"/>
+							</div>
+							<div class="field-wrap">
+								<label>
+					  			输入密码<span class="req">*</span>
+								</label>
+								<input type="password"required autocomplete="off"/>
+							</div>
+							<button type="submit" class="button button-block"/>注册</button>
+						</form>
+
+					</div>
+				</div><!-- tab-content -->
+			</div> <!-- /form -->
+			<div class="loginLayer">
+			</div>
+	    </div>	
         <!-- Footer -->
         <div class="footer-light container">
           <span class="pull-left">©2016-2017 VCWSS All Rights Reserved.</span>
@@ -188,7 +240,8 @@
 	    <script src="../../js/app.js" type="text/javascript"></script>
 	    <script src="../../js/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
 	    <script type="text/javascript" src="../../js/cms5sqn.js"></script>
-	    <script type="text/javascript" src="../../js/searchAct.js"></script>
+	    <script type="text/javascript" src="../../js/layout.js"></script>
 	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	    <script src="../../js/login.js"></script>
 	</body>
 </html>
