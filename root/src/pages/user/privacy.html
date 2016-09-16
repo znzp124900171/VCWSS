@@ -145,8 +145,36 @@
 	                      </ul>
 	                  </div>
 	                </li>
+				<li id="languageTxt" class="dropdown-custom navbar-langtxt">
+				  <a href="#">语言<span class="caret"></span></a>
+				  <div class="submenu">
+				      <ul class="submenu-dropdown">
+				          <li><a href="#">中文</a></li>
+				          <li><a href="#">德语</a></li>
+				      </ul>
+				  </div>
+				</li>
 	            </ul>
-	            <ul class="nav navbar-nav navbar-left nav-language">
+	            <ul id="log" class="nav navbar-nav navbar-right">
+	              	<li class="signup">
+	                	<a href="../user/login.html">登陆</a>
+	              	</li>
+	            </ul>
+	            <form id="SearchBox" class="nav navbar-nav navbar-right navbar-form inputbox"  method="get" action="http://www.google.com/search" target="_blank" role="search" style="opacity:0;width:0px;">
+	                <div id="inputBox" class="input-group">
+	                    <input type="text" class="form-control" placeholder="Search" style="width:100px; height:34px;">
+	                    <input type="hidden" name="sitesearch" value="stu-cn.de">
+	                  <span class="input-group-btn">
+	                    <button class="btn btn-default" type="submit"><span class=" glyphicon glyphicon-search"></span></button>
+	                  </span>
+	                </div>
+	            </form>
+	            <ul id="SearchTxt" class="nav navbar-nav navbar-right">
+	              	<li class="signup">
+	                	<a>搜索</a>
+	              	</li>
+	            </ul>
+	            <ul id="language" class="nav navbar-nav navbar-right nav-language">
 	              <li>
 	                <a href="#">
 	                  中文<img src="../../img/China.png" class="lang-img">
@@ -157,26 +185,20 @@
 	                  DE<img src="../../img/Germany.png" class="lang-img">
 	                </a>
 	              </li>
-	            </ul>
-	            <div class="nav navbar-nav navbar-right">
-	              <div class="signup">
-	                <a href="../user/login.html">登陆</a>
-	              </div>
-	            </div>
-	            <form class="nav navbar-nav navbar-right navbar-form"  method="get" action="http://www.google.com/search" target="_blank" role="search" >
-	                <div class="input-group">
-	                    <input type="text" class="form-control" placeholder="Search" style="height:34px">
-	                    <input type="hidden" name="domains" value="stu-cn.de">
-	                    <input type="hidden" name="sitesearch" value="stu-cn.de">
-	                  <span class="input-group-btn">
-	                    <button class="btn btn-default" type="submit"><span class=" glyphicon glyphicon-search"></span></button>
-	                  </span>
-	                </div>
-	            </form>
+	            </ul>	
 	          </div><!-- /.navbar-collapse -->
 	        </div><!-- /.container -->
 	    </nav>
 	    <!-- /Header -->
+
+	    <!-- breadcrumb -->
+	    <div class="container">
+            <ol class="breadcrumb">
+            	<li><a href="#" class="fa fa-home"></a></li>
+                <li><a href="#">隐私政策&法律声明</a></li>
+            </ol>
+	    </div>
+	    <!-- /breadcrumb -->
 
 	    <div class="container" style="margin-top:60px;">
 	    	<div class="row">

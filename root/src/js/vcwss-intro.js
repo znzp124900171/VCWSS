@@ -1,7 +1,3 @@
-function activaTab(tab){
-    $('.nav-tabs a[href="#' + tab + '"]').tab('show');
-};
-
 $('[data-toggle="popover"]').popover({
 	html:true,
 	placement: 'top',
@@ -14,5 +10,10 @@ $('[data-toggle="popover"]').popover({
 	}
 });
 
-
-activaTab('vcwss-intro');
+$('.nav-tabs li a').click(function(event) {
+	if($(this).parent().hasClass('disabled')) {
+		event.preventDefault();
+		return false;
+	}
+	$('.breadcrumb .active').text($(this).text());
+});
