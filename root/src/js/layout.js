@@ -22,6 +22,7 @@ sTxt.onclick = function(){
 		log.style.display = 'none';
 		langTxt.style.display = 'none';
 		lang.style.display = 'none';
+		sBox.className = 'nav navbar-nav navbar-right navbar-form inputbox';
 		sBox.style.opacity = '1';
 		sBox.style.width = 'auto';
 /*
@@ -42,8 +43,9 @@ logBox.onclick=function(){
 }
 document.onclick = function(){
 	if(sTxt.style.display == 'none'){
-		sBox.style.opacity = '0';
+		sBox.className = 'nav navbar-nav navbar-right navbar-form inputbox-out';
 		sBox.style.width = '0px';
+		sBox.style.opacity = '0';
 		sTxt.removeAttribute('style');
 		log.removeAttribute('style');
 		langTxt.removeAttribute('style');
@@ -55,7 +57,7 @@ document.onclick = function(){
 			langTxt.style.display = 'table';
 		}else{
 			lang.style.display = 'table';
-		}*/
+		}*/	
 	}
 	if(logLayer.style.display == 'block'){
 		logLayer.style.display = 'none';

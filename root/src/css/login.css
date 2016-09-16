@@ -22,9 +22,9 @@ a:hover {
 
 .form {
   background: rgba(19, 35, 47, 0.9);
-  padding: 40px;
+  padding: 30px;
   max-width: 600px;
-  margin: 40px auto;
+  margin: 0px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
@@ -32,7 +32,7 @@ a:hover {
 .tab-group {
   list-style: none;
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
 }
 .tab-group:after {
   content: "";
@@ -42,10 +42,10 @@ a:hover {
 .tab-group li a {
   display: block;
   text-decoration: none;
-  padding: 15px;
+  padding: 8px;
   background: rgba(160, 179, 176, 0.25);
   color: #a0b3b0;
-  font-size: 20px;
+  font-size: 16px;
   float: left;
   width: 50%;
   text-align: center;
@@ -70,7 +70,8 @@ h1 {
   text-align: center;
   color: #ffffff;
   font-weight: 300;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
+  font-size: 1.5em;
 }
 
 label {
@@ -83,7 +84,8 @@ label {
   transition: all 0.25s ease;
   -webkit-backface-visibility: hidden;
   pointer-events: none;
-  font-size: 22px;
+  font-size: 13.5px;
+  padding-top: 3px;
 }
 label .req {
   margin: 2px;
@@ -130,7 +132,7 @@ textarea {
 
 .field-wrap {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .top-row:after {
@@ -151,8 +153,8 @@ textarea {
   border: 0;
   outline: none;
   border-radius: 0;
-  padding: 15px 0;
-  font-size: 2rem;
+  padding: 8px 0;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -174,4 +176,34 @@ textarea {
 .forgot {
   margin-top: -20px;
   text-align: right;
+}
+
+.loginBox{
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 40%;
+  height: auto;
+  opacity: 1;
+  z-index: 100;
+}
+.loginLayer{
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  height:100%;
+  background-color: #000000;
+  opacity: 0.5;
+}
+@media only screen and (max-width: 767px){
+  .loginBox{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    height: auto;
+    opacity: 1;
+    z-index: 100;
+  }
 }

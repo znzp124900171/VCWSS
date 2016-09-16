@@ -284,7 +284,7 @@ section {
 .navbar-custom .navbar-nav>li>a {
 	display: block;
 	color: #555;
-    font-size: 15px;
+    font-size: 14px;
     border-top: 4px solid transparent;
     text-transform: uppercase;
 }
@@ -409,7 +409,6 @@ section {
 	.navbar .container{
 		width:100%;
 	}
-
 }
 .navbar-custom .navbar-langtxt{
 	display: none;
@@ -418,6 +417,16 @@ section {
 	margin-left:-30px;
 	transition: all 1s;
 	overflow: hidden;
+}
+.navbar-custom .inputbox-out{
+	margin-left:-30px;
+	overflow:hidden;
+}
+#language-sm {
+	display: none;
+}
+.input-group {
+	width: 150px;
 }
 @media only screen and (max-width: 850px) and (min-width: 767px){
 	.navbar-custom .navbar-langtxt{
@@ -431,10 +440,16 @@ section {
 		display: none;
 	}
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 		.navbar-custom .inputbox{
 			opacity:1 !important;
-			width: 200px !important;
+			width: auto !important;
+			margin-left:-30px !important;
+			transition: all .5s;
+		}
+		.navbar-custom .inputbox-out{
+			opacity:1 !important;
+			width: auto !important;
 			margin-left:-30px !important;
 			transition: all .5s;
 		}
@@ -445,6 +460,43 @@ section {
 			padding: 0px 30px;
 			border-top: 0px;
 			border-bottom: 0px;
+		}
+		.navbar-custom .signup {
+			display: block;
+			text-align: left;
+			height: 54px;
+			width: auto;
+		}
+		.navbar-custom .nav-language>li {
+			display: block;
+			height: 54px;
+		}
+		.navbar-custom .nav-language>li>a {
+			font-size: 12px !important;
+			display: table-cell;
+			vertical-align: left;
+		}
+		.navbar-custom .nav-language>li>a>img {
+			height: 16px;
+		}
+		#language {
+			display: none;
+		}
+		#language-sm {
+			display: table;
+		}
+		.inputbox .input-group {
+			width:80%;
+		}
+		.inputbox-out .input-group{
+			width:80%;
+		}
+		.input-group .form-control {
+			width: 65%;
+		}
+		.input-group .input-group-btn{
+			position: absolute;
+			left: 65%;
 		}
 }
 /* 6 Home
@@ -931,21 +983,3 @@ section {
 
 /* 21 Login
 ------------------------------------------------------------------------*/
-.loginBox{
-	position: absolute;
-	left: 30%;
-	top: 20%;
-	width: 40%;
-	height: auto;
-	opacity: 1;
-	z-index: 100;
-}
-.loginLayer{
-	position: absolute;
-	left:0;
-	top:0;
-	width: 100%;
-	height:100%;
-	background-color: #000000;
-	opacity: 0.5;
-}
