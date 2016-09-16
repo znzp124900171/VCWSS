@@ -176,6 +176,50 @@ section {
     background-attachment: fixed;
 }
 
+/* 4 Breadcrumbs
+----------------------------------------------------------------------------- */
+.breadcrumbs-path {
+	margin: 20px auto 10px 0px;
+	font-size: 16px;
+	line-height: 1.7666;
+	font-weight: 400;
+	letter-spacing: normal;
+	position: relative;
+	z-index: 1;
+}
+.breadcrumbs-path:before {
+	content: ' ';
+	display: table;
+}
+.breadcrumbs-path:after {
+	clear: both;
+}
+.breadcrumbs-path ol {
+	padding-left: 0px;
+	display: inline-block;
+}
+.breadcrumbs-path ol li {
+	display: inline-block;
+}
+.breadcrumbs-list {
+	direction: ltr;
+	list-style: none;
+}
+.breadcrumbs-item:before {
+	color: #d6d6d6;
+	padding-left: 0.2em;
+	font-family: FontAwesome;
+	content: "\f105";
+	display: inline-block;
+}
+.breadcrumbs-item span {
+	padding-left: 10px;
+	font-size: 14px;
+	font-family: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	text-align: inherit;
+}
 
 /* 4 Preloader
 ----------------------------------------------------------------------------- */
@@ -196,7 +240,7 @@ section {
     position:absolute;
     left:50%; 
     top:50%; 
-    background-image:url(../../img/preloader.gif); 
+    background-image:url(../img/preloader.gif); 
     background-repeat:no-repeat;
     background-position:center;
     margin:-100px 0 0 -100px; 
@@ -442,10 +486,10 @@ section {
 			display: table;
 		}
 		.inputbox .input-group {
-			width:80%;
+			width:90%;
 		}
 		.inputbox-out .input-group{
-			width:80%;
+			width:90%;
 		}
 		.input-group .form-control {
 			width: 65%;
