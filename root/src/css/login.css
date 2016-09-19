@@ -2,25 +2,25 @@
   box-sizing: border-box;
 }
 
-html {
+#loginDiv html {
   overflow-y: scroll;
 }
 
-body {
+#loginDiv body {
   font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
 }
 
-a {
+#loginDiv a {
   text-decoration: none;
   color: #1ab188;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
-a:hover {
+#loginDiv a:hover {
   color: #179b77;
 }
 
-.form {
+#loginDiv .form {
   background: rgba(19, 35, 47, 0.9);
   padding: 30px;
   max-width: 600px;
@@ -29,17 +29,17 @@ a:hover {
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
-.tab-group {
+#loginDiv .tab-group {
   list-style: none;
   padding: 0;
   margin: 0 0 20px 0;
 }
-.tab-group:after {
+#loginDiv .tab-group:after {
   content: "";
   display: table;
   clear: both;
 }
-.tab-group li a {
+#loginDiv .tab-group li a {
   display: block;
   text-decoration: none;
   padding: 8px;
@@ -53,20 +53,20 @@ a:hover {
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
-.tab-group li a:hover {
+#loginDiv .tab-group li a:hover {
   background: #179b77;
   color: #ffffff;
 }
-.tab-group .active a {
+#loginDiv .tab-group .active a {
   background: #1ab188;
   color: #ffffff;
 }
 
-.tab-content > div:last-child {
+#loginDiv .tab-content > div:last-child {
   display: none;
 }
 
-h1 {
+#loginDiv h1 {
   text-align: center;
   color: #ffffff;
   font-weight: 300;
@@ -74,7 +74,7 @@ h1 {
   font-size: 1.5em;
 }
 
-label {
+#loginDiv label {
   position: absolute;
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
@@ -87,26 +87,26 @@ label {
   font-size: 13.5px;
   padding-top: 3px;
 }
-label .req {
+#loginDiv label .req {
   margin: 2px;
   color: #1ab188;
 }
 
-label.active {
+#loginDiv label.active {
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
   left: 2px;
   font-size: 14px;
 }
-label.active .req {
+#loginDiv label.active .req {
   opacity: 0;
 }
 
-label.highlight {
+#loginDiv label.highlight {
   color: #ffffff;
 }
 
-input, textarea {
+#loginDiv input, #loginDiv textarea {
   font-size: 22px;
   display: block;
   width: 100%;
@@ -120,36 +120,36 @@ input, textarea {
   -webkit-transition: border-color .25s ease, box-shadow .25s ease;
   transition: border-color .25s ease, box-shadow .25s ease;
 }
-input:focus, textarea:focus {
+#loginDiv input:focus, #loginDiv textarea:focus {
   outline: 0;
   border-color: #1ab188;
 }
 
-textarea {
+#loginDiv textarea {
   border: 2px solid #a0b3b0;
   resize: vertical;
 }
 
-.field-wrap {
+#loginDiv .field-wrap {
   position: relative;
   margin-bottom: 45px;
 }
 
-.top-row:after {
+#loginDiv .top-row:after {
   content: "";
   display: table;
   clear: both;
 }
-.top-row > div {
+#loginDiv .top-row > div {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-.top-row > div:last-child {
+#loginDiv .top-row > div:last-child {
   margin: 0;
 }
 
-.button {
+#loginDiv .button {
   border: 0;
   outline: none;
   border-radius: 0;
@@ -164,21 +164,21 @@ textarea {
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
-.button:hover, .button:focus {
+#loginDiv .button:hover, .button:focus {
   background: #179b77;
 }
 
-.button-block {
+#loginDiv .button-block {
   display: block;
   width: 100%;
 }
 
-.forgot {
+#loginDiv .forgot {
   margin-top: -20px;
   text-align: right;
 }
 
-.loginBox{
+#loginDiv .loginBox{
   position: absolute;
   left: 30%;
   top: 20%;
@@ -187,7 +187,7 @@ textarea {
   opacity: 1;
   z-index: 100;
 }
-.loginLayer{
+#loginDiv .loginLayer{
   position: absolute;
   left:0;
   top:0;
@@ -197,7 +197,7 @@ textarea {
   opacity: 0.5;
 }
 @media only screen and (max-width: 767px){
-  .loginBox{
+  #loginDiv .loginBox{
     position: absolute;
     left: 10%;
     top: 20%;

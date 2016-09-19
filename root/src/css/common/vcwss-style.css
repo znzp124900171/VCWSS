@@ -623,7 +623,7 @@ section {
 /* 10 inner (Info)
 ----------------------------------------------------------------------------- */
 #inner-section {
-	background: url(../../img/homepage/ad-block.jpg) center;
+	background: url(../../img/homepage/ad-block.jpg) center no-repeat;
 	background-size: cover;
 }
 .intermediate-container .subheading h4 {
