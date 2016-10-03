@@ -103,8 +103,8 @@
           <a href="#">语言<span class="caret"></span></a>
           <div class="submenu">
               <ul class="submenu-dropdown">
-                  <li><a href="#">中文</a></li>
-                  <li><a href="#">德语</a></li>
+                  <li><a href="#" id='lang-cn'>中文</a></li>
+                  <li><a href="#" id='lang-de'>德语</a></li>
               </ul>
           </div>
         </li>
@@ -227,7 +227,7 @@
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
-        <div class="item active">
+        <div class="item active" id="carousel-0">
           <!-- item-1 -->
           <img src='../img/tmp_img/1.jpg' alt='1'  class="img-responsive">
           <div class="container">
@@ -235,9 +235,8 @@
               <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
                 <div class="carousel-caption">
                   <div class="carousel-text">
-                    <h1 class="animated fadeInDownBig animation-delay-1 intro-title" style="font-weight:700;">
-                      年轻
-                      <span class="element" data-elements="&nbsp;就是无极限"></span>
+                    <h1 class="animated fadeInDownBig animation-delay-1 carousel-title" style="font-weight:700;">
+                      年轻就是无极限
                     </h1>
                     <p class="animated fadeInUpBig animation-delay-8 margin-t-md hidden-print hidden-sm hidden-xs">
                       Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
@@ -251,7 +250,7 @@
             </div>
           </div>
         </div>
-        <div class="item img-responsive">
+        <div class="item img-responsive" id="carousel-1">
           <!-- item-2 -->
           <img src='../img/tmp_img/2.jpg' alt='2'>
           <div class="container">
@@ -269,7 +268,7 @@
             </div>
           </div>
         </div>
-        <div class="item img-responsive">
+        <div class="item img-responsive" id="carousel-2">
           <!-- item-3 -->
           <img src='../img/tmp_img/3.jpg' alt='3'>
           <div class="container">
@@ -305,7 +304,7 @@
         <h4 class="page-header">近期活动<small class="block-header" style="padding-left:20px; color:#f05050"><a href="./events/events.html">更多</a></small></h4>
         <div class="row event-block-list">
           <ul>
-            <li class="col-md-3 col-sm-6 col-xs-12 event-block">
+            <li class="col-md-3 col-sm-6 col-xs-12 event-block" id="event-0">
               <div class="img-wrapper">
                 <a href="#"><img src="../img/homepage/event1.jpg"></a>
               </div>
@@ -313,7 +312,7 @@
               <span class="col-md-12 time-block">03-08-2016</span>
               <span class="col-md-12 location-block">Paffenwaldring 56 70569 Stuttgart</span>
             </li>
-            <li class="col-md-3 col-sm-6 col-xs-12 event-block">
+            <li class="col-md-3 col-sm-6 col-xs-12 event-block" id="event-1">
               <div class="img-wrapper">
                 <a href="./events/post_contents.html"><img src="../img/homepage/event2.jpg"></a>
               </div>
@@ -321,7 +320,7 @@
               <span class="col-md-12 time-block">09-06-2016</span>
               <span class="col-md-12 location-block">Paffenwaldring 57, 70569 Stuttgart</span>
             </li>
-            <li class="col-md-3 col-sm-6 col-xs-12 event-block">
+            <li class="col-md-3 col-sm-6 col-xs-12 event-block" id="event-2">
               <div class="img-wrapper">
                 <a href="./events/post_contents.html"><img src="../img/homepage/event3.jpg"></a>
               </div>
@@ -329,7 +328,7 @@
               <span class="col-md-12 time-block">30-05-2016</span>
               <span class="col-md-12 location-block">霍亨索伦城堡</span>
             </li>
-            <li class="col-md-3 col-sm-6 col-xs-12 event-block">
+            <li class="col-md-3 col-sm-6 col-xs-12 event-block" id="event-3">
               <div class="img-wrapper">
                 <a href="./events/post_contents.html"><img src="../img/homepage/event4.jpg"></a>
               </div>
@@ -344,28 +343,28 @@
         <h4 class="page-header">近期新闻<small class="block-header" style="padding-left:20px; color:#f05050"><a href="./events/events.html">更多</a></small></h4>
         <div class="row event-block-list">
           <ul>
-            <li class="col-md-3 col-sm-6 col-xs-12 text-center event-block">
+            <li class="col-md-3 col-sm-6 col-xs-12 text-center event-block" id="news-0">
               <div class="img-wrapper">
                 <a href="./events/post_contents.html"><img src="../img/homepage/news1.jpg"></a>
               </div>
               <h4 class="title-block"><a href="./events/post_contents.html">新生不可错过的斯图武林故事</a></h4>
               <span class="col-md-12 time-block-news">11-04-2016</span>
             </li>
-            <li class="col-md-3 col-sm-6 col-xs-12 text-center event-block">
+            <li class="col-md-3 col-sm-6 col-xs-12 text-center event-block" id="news-1">
               <div class="img-wrapper">
                 <a href="./events/post_contents.html"><img src="../img/homepage/news2.jpg"></a>
               </div>
               <h4 class="title-block"><a href="./events/post_contents.html">斯图武林 新秀大会</a></h4>
               <span class="col-md-12 time-block-news">21-04-2016</span>
             </li>
-            <li class="col-md-3 col-sm-6 col-xs-12 text-center event-block">
+            <li class="col-md-3 col-sm-6 col-xs-12 text-center event-block" id="news-2">
               <div class="img-wrapper">
                 <a href="./events/post_contents.html"><img src="../img/homepage/news3.jpg"></a>
               </div>
               <h4 class="title-block"><a href="./events/post_contents.html">中国常州——德国斯图加特招才引智对接洽谈会</a></h4>
               <span class="col-md-12 time-block-news">22-04-2016</span>
             </li>
-            <li class="col-md-3 col-sm-6 col-xs-12 text-center event-block">
+            <li class="col-md-3 col-sm-6 col-xs-12 text-center event-block" id="news-3">
               <div class="img-wrapper">
                 <a href="./events/post_contents.html"><img src="../img/homepage/news4.jpg"></a>
               </div>
@@ -403,7 +402,7 @@
     <!-- Portfolio -->
     <section id="photos" class="text-center">
       <div class="container">
-        <div class="row">
+        <div class="row" id="gallery-0">
           <div class="col-md-12">
             <h3 class="title">学联画廊</h3>
             <p class="slog">每一次精彩都与你分享</p>
@@ -411,7 +410,7 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-4 port-item">
+          <div class="col-sm-4 port-item"  id="gallery-0">
             <div class="item-img-wrap">
               <img src="../img/tmp_img/about-1.png" class="img-responsive" alt="workimg">
               <div class="item-img-overlay">
@@ -428,7 +427,7 @@
           </div>
           <!-- /portfolio-item -->
 
-          <div class="col-sm-4 port-item">
+          <div class="col-sm-4 port-item"  id="gallery-1">
             <div class="item-img-wrap">
               <img src="../img/tmp_img/about-1.png" class="img-responsive" alt="workimg">
               <div class="item-img-overlay">
@@ -445,7 +444,7 @@
           </div>
           <!-- /portfolio-item -->
 
-          <div class="col-sm-4 port-item">
+          <div class="col-sm-4 port-item"  id="gallery-2">
             <div class="item-img-wrap">
               <img src="../img/tmp_img/about-1.png" class="img-responsive" alt="workimg">
               <div class="item-img-overlay">

@@ -854,7 +854,7 @@ section {
 	.navbar-custom .navbar-toggle {
 		margin: 5px 15px 0px 0px;
 	}
-	.intro-title,.intermediate-container .heading h2{
+	.carousel-title,.intermediate-container .heading h2{
 		font-size: 30px;
 	}
 	#home {
