@@ -8,6 +8,8 @@ $('#lang-de').click(function() {
 	sysLan = 'de-DE';
 });
 
+var api = 'http://47.90.202.48:8080/';
+
 if(sysLan === 'zh-CN') {
 	// 轮播框
 	$.getJSON('http://47.90.202.48:8080/vcwss/f/carouselContents?lang=0', function(carousel) {
@@ -16,8 +18,8 @@ if(sysLan === 'zh-CN') {
 				var id = '#carousel-'+i;
 				$(id+' .carousel-title').text(list.title);
 				$(id+' .carousel-text p').text(list.subtitle);
-				$(id+' .carousel-text a').attr('href', list.url);
-				$(id+' img').attr('src', list.img);
+				$(id+' .carousel-text a').attr('href', api+list.url);
+				$(id+' img').attr('src', api+list.img);
 			});
 		}
 	});
@@ -28,8 +30,8 @@ if(sysLan === 'zh-CN') {
 			$.each(recentEvents.data.list, function(i, list) {
 				var id = '#event-'+i;
 				$(id+' .title-block a').text(list.title);
-				$(id+' a').attr('href', list.url);
-				$(id+' img').attr('src', list.img);
+				$(id+' a').attr('href', api+list.url);
+				$(id+' img').attr('src', api+list.img);
 				$(id+' .time-block').text(list.eventTime);
 				$(id+' .location-block').text(list.eventAddress);
 			});
@@ -42,8 +44,8 @@ if(sysLan === 'zh-CN') {
 			$.each(recentNews.data.list, function(i, list) {
 				var id = '#news-'+i;
 				$(id+' .title-block a').text(list.title);
-				$(id+' a').attr('href', list.url);
-				$(id+' img').attr('src', list.img);
+				$(id+' a').attr('href', api+list.url);
+				$(id+' img').attr('src', api+list.img);
 				$(id+' .time-block-news').text(list.releaseTime);
 			});
 		};
@@ -55,7 +57,7 @@ if(sysLan === 'zh-CN') {
 			$.each(ads.data.list, function(i,list) {
 				$('.parallax .heading h2').text(list.title);
 				$('.parallax .subheading h4').text(list.subtitle);
-				$('#inner-section').css('background', 'url('+list.img+') center no-repeat');
+				$('#inner-section').css('background', 'url('+api+list.img+') center no-repeat');
 			});
 		}
 	});
@@ -66,9 +68,9 @@ if(sysLan === 'zh-CN') {
 			$.each(galleries.data.list, function(i,list){
 				var id = '#gallery-'+i;
 				$(id+' .work-desc a').text(list.thema);
-				$(id+' .img').attr('src', list.coverImg);
-				$(id+' .item-img-overlay a').attr('href', list.coverImg);
-				$(id+' .work-desc a').attr('href', list.url);
+				$(id+' .img').attr('src', api+list.coverImg);
+				$(id+' .item-img-overlay a').attr('href', api+list.coverImg);
+				$(id+' .work-desc a').attr('href', api+list.url);
 			});
 		}
 	});
