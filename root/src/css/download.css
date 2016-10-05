@@ -8,11 +8,11 @@
 .file-list ul li {
 	line-height: 2em;
 	font-size: 18px;
-	font-weight: 300;
 	margin: 10px auto;
 }
 .file-list ul li a {
 	color: #3090e4;
+	font-weight: 400;
 }
 .file-list ul li span {
 	margin-left: 20px;

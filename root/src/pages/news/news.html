@@ -27,14 +27,14 @@
 	    <!-- Global styles -->
 	    <link rel="stylesheet" type="text/css" href="../../css/common/vcwss-style.css">
 	    <link href="../../css/common/red.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
 	    <link rel="stylesheet" href="../../css/normalize.css">
     	<link rel="stylesheet" href="../../css/login.css">
 	    <!-- Custom styles for this page -->
-	    <link rel="stylesheet" type="text/css" href="../../css/download.css">
+	    <link rel="stylesheet" type="text/css" href="../../css/article-list.css">
 	</head>
 
-	<body data-spy="scroll" data-offset="0" tyle="background-color: rgb(251, 251, 251);">
+	<body data-spy="scroll" data-offset="0" style="background-color: rgb(246, 248, 248);">
 		<!-- Preloader -->
 	    <div class="animationload">
 	    <div class="loader">&nbsp;</div>
@@ -62,12 +62,13 @@
 	            <ul class="nav navbar-nav navbar-left">
 					<li><a href="../index.html">首页</a></li>
 					<li><a href="../events/events.html">活动</a></li>
-					<li><a href="../events/news.html">新闻</a></li>
-					<li class="dropdown-custom" class="active">
+					<li class="active"><a href="../events/events.html">新闻</a></li>
+					<li class="dropdown-custom">
 					  <a href="../resource/resource.html">实用信息<span class="caret"></span></a>
 					  <div class="submenu">
 					      <ul class="submenu-dropdown">
 					        <li><a href="#">新生手册</a></li>
+					        <li><a href="#">城市信息</a></li>
 					        <li><a href="../resource/download.html">下载资源</a></li>
 					      </ul>
 					  </div>
@@ -209,51 +210,41 @@
 			</div>
 	    </div>
 
-	    <!-- Wrapper -->
 	    <div class="container">
-            <ol class="breadcrumb" style="margin-bottom:0px;">
-            	<li><a href="#" class="fa fa-home"></a></li>
-                <li><a href="./resource.html">实用信息</a></li>
-                <li><a class="active">下载内容</a></li>
-            </ol>
-	        <div class="container" id="download-wrapper">
-	        	<div class="page-header"><h3>文件</h3></div>
-	        	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
-	        		<div class="carousel-inner">
-			        	<div class="file-list item active"  id="#page1">
-			        		<ul id="file-list">
-			        			<li><a href="#" class="vcwss">加入学联申请表</a><span>03-08-2016</span></li>
-			        			<li><a href="#">中车招聘报名表</a><span>01-08-2016</span></li>
-			        			<li><a href="#">2017年春晚节目单</a><span>29-07-2016</span></li>
-			        			<li><a href="#" class="vcwss">学联章程</a><span>11-07-2016</span></li>
-			        		</ul>
-			        		<nav>
-		                      <ul class="pager">
-		                        <li class="previous"><a href="#">&larr; Older</a></li>
-		                        <li class="next"><a href="#">Newer &rarr;</a></li>
-		                      </ul>
-		                    </nav>
-			        	</div>
-	        		</div>
-	        	</div>
-	        </div>
+	      <ol class="breadcrumb" style="margin-bottom:0px;">
+	        <li><a href="../index.html" class="fa fa-home"></a></li>
+	        <li><a class="active">新闻</a></li>
+	      </ol>
 	    </div>
 
-	    <!--
-	    <div class="container text-center page-slider">
-			<ol class="pagination">
-			  <li><a href="#carousel-example-generic" data-slide="prev">&laquo;</a></li>
-			  <li><a href="#carousel-example-generic" data-slide-to="0">1</a></li>
-			  <li><a href="#carousel-example-generic" data-slide-to="1">2</a></li>
-			  <li><a href="#carousel-example-generic" data-slide="next">&raquo;</a></li>
-			</ol>
-		</div>
+	    <div id="main-wrapper">
+	    	<div class="container content-wrapper">
+	    		<div class="row">
+	    			<div class="col-md-9" role="main">
+	    				<ul id="news-list">
+	    					
+	    				</ul>
+	    				<nav>
+	                      <ul class="pager">
+	                        <li class="previous"><a href="#">&larr; Older</a></li>
+	                        <li class="next"><a href="#">Newer &rarr;</a></li>
+	                      </ul>
+	                    </nav>
+	    			</div>
+	    			<div class="col-md-3" role="complementary">
+	    				<nav class="hidden-print hidden-xs hidden-sm affix sidebar" data-spy="affix" data-offset-top="32">
+	                        <ul class="nav nav-stacked" >
+	                            <li class><a href="#news-vcwss">学联新闻</a></li>
+	                            <li class><a href="#news-stuttgart">斯图新闻</a></li>
+	                            <li class><a href="#news-de">全德新闻</a></li>
+	                        </ul>
+	                    </nav>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
 
-		-->
-
-	    <!-- /Wrapper -->
-
-	    <!-- Footer -->
+        <!-- Footer -->
         <div class="footer-light container">
           <span class="pull-left">©2016-2017 VCWSS All Rights Reserved.</span>
           <span class="pull-left"><a href="../user/privacy.html#privacy">隐私政策</a></span>
@@ -298,7 +289,6 @@
 	    <script type="text/javascript" src="../../js/pages/layout.js"></script>
 	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	    <script src="../../js/components/login.js"></script>
-	    <script type="text/javascript" src="../../js/pages/download.js"></script>
-	</body>
+	    <script type="text/javascript" src="../../js/pages/news.js"></script>
 	</body>
 </html>

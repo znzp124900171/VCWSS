@@ -69,7 +69,10 @@ i.article-subtitle {
 .article-main {
 	margin: 30px auto;
 }
-
+.article-main img{
+	width: 100% !important;
+	height: auto !important;
+}
 /*-- article image --*/
 .article-image img{
 	width: 100%;

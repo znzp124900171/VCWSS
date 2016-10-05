@@ -1,15 +1,3 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-#loginDiv html {
-  overflow-y: scroll;
-}
-
-#loginDiv body {
-  font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
-}
-
 #loginDiv a {
   text-decoration: none;
   color: #1ab188;
@@ -181,7 +169,7 @@
 #loginDiv .loginBox{
   position: absolute;
   left: 30%;
-  top: 20%;
+  top: 5%;
   width: 40%;
   height: auto;
   opacity: 1;
@@ -195,12 +183,13 @@
   height:100%;
   background-color: #000000;
   opacity: 0.5;
+  z-index: 2;
 }
 @media only screen and (max-width: 767px){
   #loginDiv .loginBox{
     position: absolute;
     left: 10%;
-    top: 20%;
+    top: 5%;
     width: 80%;
     height: auto;
     opacity: 1;

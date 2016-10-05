@@ -264,7 +264,7 @@ section {
 	margin-top: -1px;
 	top: 55px;
 	left: 0;
-	width: 100px;
+	width: 96px;
 	overflow: hidden;
 	box-shadow: 0px 2px 5px rgba(0,0,0,.1);
 }
@@ -273,7 +273,7 @@ section {
 	padding-left: 0px;
 	float: left;
 	z-index: 1000;
-	width: 100px;
+	width: 96px;
 	transition: all .2s;
 }
 @media only screen and (max-width: 767px) {

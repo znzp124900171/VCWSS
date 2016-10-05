@@ -45,6 +45,13 @@
       <script src="src/js/respond.min.js"></script>
     <![endif]-->
   </head>
+<!--script type="text/javascript">
+    $('#mySidebar').affix({
+    offset: {
+        top: $('#mySidebar').offset().top
+    }
+});
+</script-->
 
   <body data-spy="scroll" data-offset="0" style="background-color: #fbfbfb;">
     <!-- Preloader -->
@@ -73,8 +80,8 @@
             <div class="collapse navbar-collapse" id="vcwss-navbar-collapse">
               <ul class="nav navbar-nav navbar-left">
           <li><a href="../index.html">首页</a></li>
-          <li class="active"><a href="../events/events.html">活动</a></li>
-          <li><a href="../news/news.html">新闻</a></li>
+          <li><a href="../events/events.html">活动</a></li>
+          <li class="active"><a href="../news/news.html">新闻</a></li>
           <li class="dropdown-custom">
             <a href="../resource/resource.html">实用信息<span class="caret"></span></a>
             <div class="submenu">
@@ -95,15 +102,15 @@
                 </ul>
             </div>
           </li>
-                  <li class="dropdown-custom">
-                    <a href="../contact/contact.html">联系我们<span class="caret"></span></a>
-                    <div class="submenu">
-                        <ul class="submenu-dropdown">
-                          <li><a href="../contact/contact.html">联系方式</a></li>
-                          <li><a href="#">常见问题</a></li>
-                        </ul>
-                    </div>
-                  </li> 
+          <li class="dropdown-custom">
+            <a href="../contact/contact.html">联系我们<span class="caret"></span></a>
+            <div class="submenu">
+                <ul class="submenu-dropdown">
+                  <li><a href="../contact/contact.html">联系方式</a></li>
+                  <li><a href="#">常见问题</a></li>
+                </ul>
+            </div>
+          </li>
           <li id="languageTxt" class="dropdown-custom navbar-langtxt">
             <a href="#">语言<span class="caret"></span></a>
             <div class="submenu">
@@ -162,70 +169,70 @@
       <!-- /Header -->
 
       <div id="loginDiv" style="display:none;">
-        <div id="Form" class="form loginBox">
-          <ul class="tab-group">
-            <li class="tab active"><a href="#login">登录</a></li>
-            <li class="tab"><a href="#signup">注册</a></li>
-          </ul>
-          <div class="tab-content">
-            <div id="login">   
-              <h1>欢迎回来</h1>
-              <form action="/" method="post">
-                <div class="field-wrap">
-                  <label>
-                    电子邮件地址/用户名<span class="req">*</span>
-                  </label>
-                  <input type="email"required autocomplete="off">
-                </div>
-                <div class="field-wrap">
-                  <label>
-                    密码<span class="req">*</span>
-                  </label>
-                  <input type="password"required autocomplete="off">
-                </div>
+      <div id="Form" class="form loginBox">
+        <ul class="tab-group">
+          <li class="tab active"><a href="#login">登录</a></li>
+          <li class="tab"><a href="#signup">注册</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="login">   
+            <h1>欢迎回来</h1>
+            <form action="/" method="post">
+              <div class="field-wrap">
+                <label>
+                  电子邮件地址/用户名<span class="req">*</span>
+                </label>
+                <input type="email"required autocomplete="off">
+              </div>
+              <div class="field-wrap">
+                <label>
+                  密码<span class="req">*</span>
+                </label>
+                <input type="password"required autocomplete="off">
+              </div>
 
-                <p class="forgot"><a href="#">忘记密码？</a></p>
+              <p class="forgot"><a href="#">忘记密码？</a></p>
 
-                <button class="button button-block">登录</button>
+              <button class="button button-block">登录</button>
 
-              </form>
-            </div>
-            <div id="signup">
-              <h1>注册您的账户</h1>
-              <form action="/" method="post">
-                <div class="field-wrap">
-                  <label>
-                    账户名<span class="req">*</span>
-                  </label>
-                  <input type="text" required autocomplete="off">
-                </div>
-                <div class="field-wrap">
-                  <label>
-                    电子邮件地址<span class="req">*</span>
-                  </label>
-                  <input type="email"required autocomplete="off">
-                </div>
-                <div class="field-wrap">
-                  <label>
-                    输入密码<span class="req">*</span>
-                  </label>
-                  <input type="password"required autocomplete="off"/>
-                </div>
-                <button type="submit" class="button button-block">注册</button>
-              </form>
+            </form>
+          </div>
+          <div id="signup">
+            <h1>注册您的账户</h1>
+            <form action="/" method="post">
+              <div class="field-wrap">
+                <label>
+                  账户名<span class="req">*</span>
+                </label>
+                <input type="text" required autocomplete="off">
+              </div>
+              <div class="field-wrap">
+                <label>
+                  电子邮件地址<span class="req">*</span>
+                </label>
+                <input type="email"required autocomplete="off">
+              </div>
+              <div class="field-wrap">
+                <label>
+                  输入密码<span class="req">*</span>
+                </label>
+                <input type="password"required autocomplete="off"/>
+              </div>
+              <button type="submit" class="button button-block">注册</button>
+            </form>
 
-            </div>
-          </div><!-- tab-content -->
-        </div> <!-- /form -->
-        <div class="loginLayer">
-        </div>
+          </div>
+        </div><!-- tab-content -->
+      </div> <!-- /form -->
+      <div class="loginLayer">
+      </div>
       </div>
 
     <div class="container">
       <ol class="breadcrumb" style="margin-bottom:0px;">
         <li><a href="../index.html" class="fa fa-home"></a></li>
-        <li><a href="./events.html">活动</a></li>
-        <li><a class="active">学联活动</a></li>
+        <li><a href="./events.html">新闻</a></li>
+        <li><a class="active">学联新闻</a></li>
       </ol>
     </div>
 
