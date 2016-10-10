@@ -10,7 +10,7 @@ if(!pageNo) {
 	pageNo = 1;
 }
 
-if(sysLan === 'zh-CN') {
+if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
 	$.getJSON(api+'?pageNo='+pageNo+'&pageSize=10&lang=0', function(eventsList) {
 		if(eventsList.success) {
 			$('#event-list').html('');

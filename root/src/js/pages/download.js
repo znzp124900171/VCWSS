@@ -10,7 +10,7 @@ if(!pageNo) {
 	pageNo = 1;
 }
 
-if(sysLan === 'zh-CN') {
+if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
 	$.getJSON(api+'?pageNo='+pageNo, function(downloads) {
 		if (downloads.success) {
 			$('#file-list').html('');

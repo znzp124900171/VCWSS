@@ -85,7 +85,7 @@
 					      </ul>
 					  </div>
 					</li>
-	                <li class="dropdown-custom">
+	                <li class="dropdown-custom active">
 	                  <a href="#" class="active">联系我们<span class="caret"></span></a>
 	                  <div class="submenu">
 	                      <ul class="submenu-dropdown">
@@ -222,89 +222,102 @@
 		    		<div class="col-md-8" id="contact-form">
 		    			<h2>联系我们</h2>
 		    			<h3><small>您可以通过填写下面的表单与我们直接联系，或通过右边显示的电子邮件地址与我们联系,也可以转至<a href="../resource/download.html" style="color:#337ab7">下载</a>页面，下载表格寄给我们,我们期待与您的交流.</small></h3>
-		    			<form>
+		    			<form role="form" method="POST" action="http://47.90.202.48/vcwss/f/contactMessage" onsubmit="return sendForm();" id="contactForm">
 	    					<div class="form-group">
 	    						<label class="more" for="">姓名:</label>
-	    						<input type="name" class="form-control" id="formName" placeholder="姓名">
+	    						<input type="text" class="form-control" id="formName" placeholder="姓名" required>
 	    					</div>
 	    					<div class="form-group">
 	    						<label class="more" for="">Email:</label>
-	    						<input type="email" class="form-control" id="formEmail" placeholder="Email">
+	    						<input type="email" class="form-control" id="formEmail" placeholder="Email" required>
+	    					</div>
+	    					<div class="form-group">
+	    						<label for="">电话</label>
+	    						<input type="tel" class="form-control" id="formTel" placeholder="电话">
 	    					</div>
 	    					<div class="form-group">
 	    						<label for="">主题</label>
-	    						<select class="form-control" id="formThema">
-	    							<option>申请加入</option>
-	    							<option>赞助合作</option>
-	    							<option>交流访问</option>
-	    							<option>其他</option>
+	    						<select class="form-control" id="formThema" required>
+	    							<option value="1">申请加入</option>
+	    							<option value="2">赞助合作</option>
+	    							<option value="3">交流访问</option>
+	    							<option value="4">其他</option>
 	    						</select>
 	    					</div>
 							<div class="form-group">
 							<label class="more" for="">标题:</label>
-							<input type="" class="form-control" id="formTitle" placeholder="标题">
+							<input type="text" class="form-control" id="formTitle" placeholder="标题" required>
 							</div>
 							<div class="form-group">
 								<label class="more" for="">内容:</label>
-								<textarea type="" class="form-control" id="formContents" placeholder="内容" style="min-height:120px;"></textarea>
+								<textarea type="text" class="form-control" id="formContents" placeholder="内容" style="min-height:120px;" required></textarea>
 							</div>
+							<div style="display: none;"><img src="" alt="验证码" class="validateImg"><input type="text" id="validateCode" placeholder="输入验证码" style="text-transform:uppercase;" required></div>
 							<div class="col-md-12 text-center" style="margin-top:20px;">
-								<button type="submit" class="btn btn-custom" onclick="sendForm();"><i class="fa fa-paper-plane" style="margin-left:-10px;padding-right:10px;font-size:20px;"></i>提交</button>
+								<button type="submit" class="btn btn-custom"><i class="fa fa-paper-plane" style="margin-left:-10px;padding-right:10px;font-size:20px;"></i>提交</button>
 							</div>
 						</form>
 						<div>
-							<img src="../../img/contact/postmark.png" style="max-width:300px;margin-top:20px;opacity:0.5;">
+							<img src="../../img/contact/postmark.png" style="max-width:280px;margin-top:20px;margin-left:-15px;opacity:0.5;">
 						</div>
 		    		</div>
 		    		<div class="col-md-4" id="contact-info">
 		    			<dl>
-		    				<dt>电子邮件</dt>
-		    				<dd><a href="mailto:info@vcwss.de">info@vcwss.de</a></dd>
-		    				<dt>紧急电话</dt>
-		    				<dd><a href="tel:+491733432796">+49 1733432796</a></dd>
+		    				<div class="row">
+		    					<div class="col-md-12 col-xs-6">
+		    						<dt>电子邮件</dt>
+			    					<dd><a href="mailto:info@vcwss.de">info@vcwss.de</a></dd>
+		    					</div>
+			    				<div class="col-md-12 col-xs-6">
+			    					<dt>紧急电话</dt>
+			    					<dd><a href="tel:+491733432796">+49 1733432796</a></dd>
+			    				</div>
+		    				</div>
 		    				<dt>地址及办公时间</dt>
-		    				<dd>
-		    					<h5>Campus Vaihingen<small class="help-block">答疑</small></h5>
-		    					<div class="row">
-				    				<div class="col-md-6">
-				    					<p>Hellblaues Nilpferd</p>
-				    					<p>Pfaffenwaldring 57</p>
-				    					<p>70569 Stuttgart</p>
-				    				</div>
-				    				<div class="col-md-6">
-				    					<p>周二 10:00-12:00</p>
-				    					<p>周四 15:00-17:00</p>
-				    				</div>
-				    			</div>
-		    				</dd>
-		    				<dd>
-		    					<h5>Campus Stadtmitte<small class="help-block">主席答疑</small></h5>
-		    					<div class="row">
-				    				<div class="col-md-6">
-				    					<p>ZFB, Raum 2.036</p>
-				    					<p>Stock 2a</p>
-				    					<p>Keplerstr. 17</p>
-				    					<p>70174 Stuttgart</p>
-				    				</div>
-				    				<div class="col-md-6">
-				    					<p>周二 18:30-20:30</p>
-				    				</div>
-				    			</div>
-		    				</dd>
-		    				<dd>
-		    					<h5>Campus Vaihingen<small class="help-block">例会答疑</small></h5>
-		    					<div class="row">
-				    				<div class="col-md-6">
-				    					<p>Internationale Zentrum</p>
-				    					<p>Zimmer U022</p>
-				    					<p>Pfaffenwaldring 69</p>
-				    					<p>70569 Stuttgart</p>
-				    				</div>
-				    				<div class="col-md-6">
-				    					<p>周二 18:30-20:30</p>
-				    				</div>
-				    			</div>
-		    				</dd>
+		    				<div class="row">
+			    				<dd class="col-md-12 col-xs-6">
+			    					<h5>Campus Vaihingen<small class="help-block">答疑</small></h5>
+			    					<div class="row">
+					    				<div class="col-md-6">
+					    					<p>Hellblaues Nilpferd</p>
+					    					<p>Pfaffenwaldring 57</p>
+					    					<p>70569 Stuttgart</p>
+					    				</div>
+					    				<div class="col-md-6">
+					    					<p>周二 10:00-12:00</p>
+					    					<p>周四 15:00-17:00</p>
+					    				</div>
+					    			</div>
+			    				</dd>
+			    				<dd class="col-md-12 col-xs-6">
+			    					<h5>Campus Stadtmitte<small class="help-block">主席答疑</small></h5>
+			    					<div class="row">
+					    				<div class="col-md-6">
+					    					<p>ZFB, Raum 2.036</p>
+					    					<p>Stock 2a</p>
+					    					<p>Keplerstr. 17</p>
+					    					<p>70174 Stuttgart</p>
+					    				</div>
+					    				<div class="col-md-6">
+					    					<p>周二 18:30-20:30</p>
+					    				</div>
+					    			</div>
+			    				</dd>
+			    				<dd class="col-md-12 col-xs-6">
+			    					<h5>Campus Vaihingen<small class="help-block">例会答疑</small></h5>
+			    					<div class="row">
+					    				<div class="col-md-6">
+					    					<p>Internationale Zentrum</p>
+					    					<p>Zimmer U022</p>
+					    					<p>Pfaffenwaldring 69</p>
+					    					<p>70569 Stuttgart</p>
+					    				</div>
+					    				<div class="col-md-6">
+					    					<p>周二 18:30-20:30</p>
+					    				</div>
+					    			</div>
+			    				</dd>
+		    				</div>
 		    			</dl>
 		    		</div>
 		    	</div>
@@ -357,13 +370,9 @@
 	    <script src="../../js/components/typed.js" type="text/javascript"></script>
 	    <!-- customizable plugin edit according to your needs -->
 	    <script src="../../js/components/app.js" type="text/javascript"></script>
-	    <script type="text/javascript" src="../../js/components/cms5sqn.js"></script>
-	    <script type="text/javascript" src="../../js/pages/layout.js"></script>
 	    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	    <script src="../../js/components/login.js"></script>
-	    <!-- 野狗 -->
-	    <script src = "https://cdn.wilddog.com/sdk/js/current/wilddog.js" ></script>
 	    <!-- custom js -->
-	    <script src="../../js/contact.js" type="text/javascript"></script>
+	    <script src="../../js/pages/contact.js" type="text/javascript"></script>
 	</body>
 </html>

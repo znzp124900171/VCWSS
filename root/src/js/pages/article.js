@@ -10,6 +10,7 @@ function getParameterByName(name, url) {
 }
 var realUrl = getParameterByName('url');
 var api = 'http://47.90.202.48/'
-console.log('The real url:'+realUrl);
+var fullUrl = api +realUrl;
 $('#article-content').html('');
-$('#article-content').load('http://47.90.202.48/'+realUrl);
+$('#article-content').load(fullUrl);
+$('.content-wrapper').load();

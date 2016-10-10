@@ -12,7 +12,7 @@ var api = 'http://47.90.202.48/';
 var apiEvent = 'http://47.90.202.48/events/post_contents.html';
 var apiNews = 'http://47.90.202.48/news/post_contents.html'
 
-if(sysLan === 'zh-CN') {
+if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
 	// 轮播框
 	$.getJSON('http://47.90.202.48/vcwss/f/carouselContents?lang=0', function(carousel) {
 		if (carousel.success) {
