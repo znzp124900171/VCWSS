@@ -30,14 +30,21 @@ if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
 	// 近期活动
 	$.getJSON('http://47.90.202.48/vcwss/f/recentEvents?lang=0', function(recentEvents){
 		if(recentEvents.success) {
+			var count = 0;
 			$.each(recentEvents.data.list, function(i, list) {
-				var id = '#event-'+i;
+				var li = $('<li class="col-md-3 col-sm-6 col-xs-12 event-block"></li>');
+				var eventUrl = apiEvent+'?url=vcwss'+list.url+'&type='+list.type;
 				var imgUrl = list.img.replace('/_thumbs','');
-				$(id+' .title-block a').text(list.title);
-				$(id+' a').attr('href', apiEvent+'?url=vcwss'+list.url+'&type='+list.type);
-				$(id+' img').attr('src', api+list.img);
-				$(id+' .time-block').text(list.eventTime);
-				$(id+' .location-block').text(list.eventAddress);
+				$(li).append('<div class="img-wrapper"><a href="'+eventUrl+'"><img src="'+imgUrl+'"></a></div>');
+				$(li).append('<h4 class="title-block"><a href="'+eventUrl+'">'+list.title+'</a></h4>');
+				$(li).append('<span class="col-md-12 col-sm-12 col-xs-12 time-block">'+list.eventTime+'</span>');
+				$(li).append('<span class="col-md-12 col-sm-12 col-xs-12 location-block">'+list.eventAddress+'</span>');
+				$(li).appendTo('#eventsList');
+				count++;
+				if (count > 3) {
+					return false;
+				}
+
 			});
 		};
 	});

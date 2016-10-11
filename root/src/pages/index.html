@@ -32,11 +32,6 @@
     <!-- Custom styles for this template -->
     <link href="../css/homepage.css" rel="stylesheet">
     <link href="../css/login.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
-    <!--[if lt IE 9]>
-    <script src="../js/html5shiv.js"></script>
-    <script src="../js/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body data-spy="scroll" data-offset="0">
@@ -46,6 +41,22 @@
     <div class="loader">&nbsp;</div>
     </div>
     <!-- End Preloader -->
+
+    <div class="tagline hidden-xs">
+      <div class="container">
+        <div class="pull-left">
+          <div class="email">
+              <i class="fa fa-home"></i>斯图加特中国学生学者联合会官网
+          </div>
+          <div class="email">
+            <a href="mailto:info@vcwss.de">
+              <i class="fa fa-envelope-o"></i> info@vcwss.de
+            </a>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
 
     <!-- Header -->
     <nav class="navbar navbar-default navbar-custom sticky" role="navigation">
@@ -302,39 +313,7 @@
       <div class="container">
         <h4 class="page-header">近期活动<small class="block-header" style="padding-left:20px; color:#f05050"><a href="./events/events.html">更多</a></small></h4>
         <div class="row event-block-list">
-          <ul>
-            <li class="col-md-3 col-sm-6 col-xs-12 event-block" id="event-0">
-              <div class="img-wrapper">
-                <a href="#"><img src="../img/homepage/event1.jpg"></a>
-              </div>
-              <h4 class="title-block"><a href="./events/post_contents.html">“东方灵欲三部曲”终极篇——《双下山》献演斯图</a></h4>
-              <span class="col-md-12 time-block">03-08-2016</span>
-              <span class="col-md-12 location-block">Paffenwaldring 56 70569 Stuttgart</span>
-            </li>
-            <li class="col-md-3 col-sm-6 col-xs-12 event-block" id="event-1">
-              <div class="img-wrapper">
-                <a href="./events/post_contents.html"><img src="../img/homepage/event2.jpg"></a>
-              </div>
-              <h4 class="title-block"><a href="./events/post_contents.html">法兰克福总领馆赴斯图加特巡回办证</a></h4>
-              <span class="col-md-12 time-block">09-06-2016</span>
-              <span class="col-md-12 location-block">Paffenwaldring 57, 70569 Stuttgart</span>
-            </li>
-            <li class="col-md-3 col-sm-6 col-xs-12 event-block" id="event-2">
-              <div class="img-wrapper">
-                <a href="./events/post_contents.html"><img src="../img/homepage/event3.jpg"></a>
-              </div>
-              <h4 class="title-block"><a href="./events/post_contents.html">斯图加特和图宾根联谊会开始报名啦！</a></h4>
-              <span class="col-md-12 time-block">30-05-2016</span>
-              <span class="col-md-12 location-block">霍亨索伦城堡</span>
-            </li>
-            <li class="col-md-3 col-sm-6 col-xs-12 event-block" id="event-3">
-              <div class="img-wrapper">
-                <a href="./events/post_contents.html"><img src="../img/homepage/event4.jpg"></a>
-              </div>
-              <h4 class="title-block"><a href="./events/post_contents.html">大圣说，惊艳的片子要放两遍</a></h4>
-              <span class="col-md-12 time-block">10-02-2016</span>
-              <span class="col-md-12 location-block">CinemaxX Stuttgart Liederhalle, Robert-Bosch-Platz 1, 70174 Stuttgart</span>
-            </li>
+          <ul id="eventsList">
           </ul>
         </div>
       </div>
@@ -481,19 +460,18 @@
               <dl class="col-sm-5">
                 <dt>友情链接</dt>
                 <dd><a href="http://frankfurt.china-consulate.org/chn/">中国驻法兰克福总领事馆</a></dd>
-                <dd><a href="#">慕尼黑学联</a></dd>
+                <dd><a href="http://www.cssa-munich.de">慕尼黑学联</a></dd>
               </dl>
               <dl class="col-sm-5">
                 <dt class="partner"></dt>
                 <dd>飞诺旅游</dd>
-                <dd>中国银行</dd>
               </dl>
             </div>
             <div class="col-sm-2 footer-nav">
               <dl>
                 <dt>资源</dt>
                 <dd>
-                  <a href="resource/resource.html">文档</a>
+                  <a href="#">图片</a>
                 </dd>
                 <dd>
                   <a href="resource/download.html">下载</a>
@@ -520,10 +498,10 @@
                 <dd class="link-icon">
                   <span class="fa fa-weixin">
                   </span>
-                  <img src="#" alt="微信二维码">
+                  <img src="" alt="微信二维码">
                 </dd>
                 <dd class="link-icon">
-                  <span class="fa fa-youtube">
+                  <a href="https://www.youtube.com/channel/UCaDG5VT2M6b7XZ-X4hQ5G9Q"><span class="fa fa-youtube"></a>
                   </span>
                 </dd>
               </dl>
@@ -580,11 +558,8 @@
         <script src="../js/components/typed.js" type="text/javascript"></script>
         <!-- customizable plugin edit according to your needs -->
         <script src="../js/components/app.js" type="text/javascript"></script>
-        <script src="../js/pages/index.js" type="text/javascript"></script>
-        <script type="text/javascript" src="../js/components/cms5sqn.js"></script>
+        <script src="../js/pages/index.js?v=0003" type="text/javascript"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <script src="../js/components/login.js"></script>
-        <script src="../js/pages/layout.js"></script>
-        <script type="text/javascript" src="../js/pages/index.js"></script>
   </body>
 </html>
