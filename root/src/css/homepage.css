@@ -1,3 +1,5 @@
+/* 活动和新闻列表
+----------------------------------------------------------------------------- */
 .event-block-list ul {
 	list-style: none;
 	padding-left: 0px;
@@ -21,9 +23,14 @@
 }
 .title-block {
 	margin: 10px auto;
-	text-align: justify;
 	line-height: 1.7;
 	height: 60px;
+	display: block; /* Fallback for non-webkit */
+  	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .title-block a:hover {
 	border-bottom:1px solid #dddddf;
@@ -70,4 +77,32 @@
 	display: inline-block;
 	font-size: 14px;
 	padding-right: 10px;
+}
+/* 广告栏
+----------------------------------------------------------------------------- */
+.parallax {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#inner-section {
+	background: url(../../img/homepage/ad-block.jpg) center no-repeat;
+	background-size: cover;
+}
+.intermediate-container .subheading h4 {
+	color: #fff;
+	font-style: italic;
+	font-family: 'Roboto Slab', serif;
+}
+.intermediate-container .heading h2 {
+	font-size: 40px;
+	line-height: 47px;
+	text-transform: uppercase;
+	margin-top: 30px;
+	color: #fff;
+	margin-bottom: 20px;
+	font-weight: 700;
 }

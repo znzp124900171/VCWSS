@@ -12,24 +12,12 @@
 	margin-bottom: 30px;
 }
 .content-wrapper ul {
-	margin-top: 60px;
+	margin-top: 30px;
 	list-style: none;
-	padding-left: 0px;
+	padding-left: 20px;
 }
-
-.gallery {
-	margin:0 5.5% 40px;
-	width: 89%;
-	padding-bottom: 50px;
-	border-bottom: 1px dotted #CCC;
-}
-
-.gallery-photos{
-	max-height: 10px;
-}
-h3.gallery-title {
-	margin-bottom: 30px;
-	font-family: "Microsoft Yahei", "宋体";
+.gallery-wrapper .row {
+	margin-left: 0px;
 }
 
 .btn-readmore {

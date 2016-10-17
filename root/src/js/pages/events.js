@@ -1,17 +1,22 @@
-var api = 'http://47.90.202.48/vcwss/f/recentEvents';
-var apiUrl = 'http://47.90.202.48'
-var urlEvent = 'http://47.90.202.48/events/post_contents.html';
+var api = 'http://vcwss.de/vcwss/f/recentEvents';
+var ip = 'http://vcwss.de/'
 var sysLan = window.navigator.language;
 
 var pageNo=getParameterByName('pageNo');
-console.log('currentPageNo:'+pageNo);
+var typeSelect = getParameterByName('eventType');
 
 if(!pageNo) {
 	pageNo = 1;
 }
 
+
 if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
-	$.getJSON(api+'?pageNo='+pageNo+'&pageSize=10&lang=0', function(eventsList) {
+	if (typeSelect == 1 || typeSelect == 2 || typeSelect == 3) {
+		jsonUrl = 'http://vcwss.de/vcwss/f/recentEvents?pageNo='+pageNo+'&pageSize=10&lang=0&eventType='+typeSelect;
+	} else {
+		jsonUrl = 'http://vcwss.de/vcwss/f/recentEvents?pageNo='+pageNo+'&pageSize=10&lang=0';
+	}
+	$.getJSON(jsonUrl, function(eventsList) {
 		if(eventsList.success) {
 			$('#event-list').html('');
 			var totalPageNo = Math.ceil(eventsList.data.count/8);
@@ -33,11 +38,12 @@ if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
 				}
 				var li = $('<li></li>');
 				var article = $('<div class="article"></div>');
-				$(article).append('<h3 class="article-title"><a href="'+urlEvent+'?url=vcwss'+list.url+'">'+list.title+'</a></h3>');
+				articleUrl = ip+'events/post_contents.html?url=vcwss'+list.url+'&type='+eventType;
+				$(article).append('<h3 class="article-title"><a href="'+articleUrl+'">'+list.title+'</a></h3>');
 				$(article).append('<div class="index-author-comments-date"><span class="author-name">'+list.author+'</span>&nbsp;&nbsp;<a href="'+'#'+'" class="archive">'+eventType+'</a>&nbsp;&nbsp; '+list.eventTime+'</div>');
-				$(article).append('<div class="article-image"><a href="'+urlEvent+'?url=vcwss'+list.url+'"><img src="'+apiUrl+imgUrl+'"></a></div>');
+				$(article).append('<div class="article-image"><a href="'+articleUrl+'"><img src="'+ip+imgUrl+'"></a></div>');
 				$(article).append('<p>'+list.subtitle+'</p>');
-				$(article).append('<a href="'+urlEvent+'?url=vcwss'+list.url+'" class="btn btn-custom btn-readmore">阅读更多</a>');
+				$(article).append('<a href="'+articleUrl+'" class="btn btn-custom btn-readmore">阅读更多</a>');
 				$(article).appendTo(li);
 				$(li).appendTo('#event-list');
 			});
@@ -54,7 +60,30 @@ if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
 
 		}
 	});
+
 }
+
+$(document).ready(function() {
+	$('#event-vcwss a').attr('href', 'http://vcwss.de/events/events.html?eventType='+1);
+	$('#event-stuttgart a').attr('href', 'http://vcwss.de/events/events.html?eventType='+2);
+	$('#event-de a').attr('href', 'http://vcwss.de/events/events.html?eventType='+3);
+
+	if(typeSelect==1) {
+		$('.breadcrumb li:nth-child(2)').after('<li><a class="active">学联活动</a></li>');
+		$('.breadcrumb li:nth-child(2) a').removeClass('active');
+		$('.breadcrumb li:nth-child(2) a').attr('href', 'http://vcwss.de/events/events.html');
+	} else if (typeSelect==2) {
+		$('.breadcrumb li:nth-child(2)').after('<li><a class="active">斯图活动</a></li>');
+		$('.breadcrumb li:nth-child(2) a').removeClass('active');
+		$('.breadcrumb li:nth-child(2) a').attr('href', 'http://vcwss.de/events/events.html');
+	} else if (typeSelect==3) {
+		$('.breadcrumb li:nth-child(2)').after('<li><a class="active">全德活动</a></li>');
+		$('.breadcrumb li:nth-child(2) a').removeClass('active');
+		$('.breadcrumb li:nth-child(2) a').attr('href', 'http://vcwss.de/events/events.html');
+	}
+
+
+});
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;

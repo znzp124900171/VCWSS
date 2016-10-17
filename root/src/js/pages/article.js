@@ -8,9 +8,15 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-var realUrl = getParameterByName('url');
-var api = 'http://47.90.202.48/'
-var fullUrl = api +realUrl;
+
+// 解析文章信息
+var api = getParameterByName('url');
+var archive = getParameterByName('type');
+var ip = 'http://vcwss.de/'
+var fullUrl = ip +api;
+
+// 更新页面内容
 $('#article-content').html('');
 $('#article-content').load(fullUrl);
-$('.content-wrapper').load();
+$('.breadcrumb .active').text(archive);
+
