@@ -69,10 +69,6 @@ i.article-subtitle {
 .article-main {
 	margin: 30px auto;
 }
-.article-main img{
-	width: 100% !important;
-	height: auto !important;
-}
 /*-- article image --*/
 .article-image img{
 	width: 100%;
@@ -179,4 +175,20 @@ h4.article-sidebar-top {
 }
 .sidebar-container-footer .data {
 	color: #ccc;
+}
+
+@media only screen and (max-width: 767px) {
+	.content-wrapper {
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 0;
+		margin-right: 0px;
+	}
+	.container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.breadcrumb {
+		padding-left: 5px;
+	}
 }

@@ -34,7 +34,9 @@ $(collapse).append('<ul class="nav navbar-nav navbar-right" style="display:none;
 $(collapse).append('<ul id="language" class="nav navbar-nav navbar-right nav-language"><li><a href="#">中文<img src="../../img/China.png" class="lang-img"></a></li><li><a href="#">DE<img src="../../img/Germany.png" class="lang-img"></a></li></ul>');
 $(collapse).append('<ul id="language-sm" class="nav navbar-nav navbar-right nav-language"><li><a href="#">中文<img src="../../img/China.png" class="lang-img"></a><a href="#">DE<img src="../../img/Germany.png" class="lang-img"></a></li></ul>');
 /* 搜索框 */
+/*
 $(collapse).append('<form id="searchBox" class="nav navbar-nav navbar-right navbar-form inputbox"  method="get" action="http://www.google.com/search" target="_blank" role="search" style="opacity:0;width:0px;"><div id="inputBox" class="input-group"><input type="text" class="form-control" placeholder="Search" style="height:34px;"><input type="hidden" name="sitesearch" value="stu-cn.de"><span class="input-group-btn"><button class="btn btn-default" type="submit"><span class=" glyphicon glyphicon-search"></span></button></span></div></form>');
+*/
 
 $(collapse).appendTo(div);
 $(div).appendTo('#nav-header');
@@ -313,3 +315,10 @@ $('.tab a').on('click', function (e) {
   $('.tab-content > div').not(target).hide();
   $(target).fadeIn(600);
 });
+
+// Google Analytics
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-69767227-3', 'auto');
+ga('send', 'pageview');
+
