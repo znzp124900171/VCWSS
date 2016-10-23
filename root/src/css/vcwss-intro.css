@@ -2,6 +2,9 @@ section {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+.nav-tabs li {
+	padding: 0px;
+}
 .intro-banner {
 	position: relative;
 	padding-top: 30%;
@@ -184,16 +187,12 @@ section {
 	margin-top: 30px;
 	margin-bottom: 60px;
 }
-#vcwss-team dd p {
-	
-}
 #vcwss-team dd .pic {
 	vertical-align: middle;
 	text-align: center;
 }
 #vcwss-team dd .content {
 	vertical-align: middle;
-	padding: 2%;
 	padding-top: 0;
 }
 #vcwss-team dd .content h1 {
@@ -224,8 +223,11 @@ section {
 	padding: 0;
 }
 @media screen and (min-width: 767px) {
-	#vcwss-team dd:nth-child(even) .content {
+	#vcwss-team dd:nth-child(even) .content h1{
 		text-align: right;
+	}
+	#vcwss-team dd:nth-child(even) .content p{
+		text-align: left;
 	}
 	#vcwss-team dd:nth-child(even) span {
 		float: right;

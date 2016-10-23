@@ -1,7 +1,11 @@
 var sysLan = window.navigator.language;
 var api = 'http://47.90.202.48/vcwss/f/downloads';
+var download_api = 'http://47.90.202.48/vcwss/f/download';
 var url = 'http://47.90.202.48';
 var urlDownload = 'http://47.90.202.48/resource/download.html';
+
+var screenWidth = window.screen.width;
+console.log(screenWidth);
 
 var pageNo=getParameterByName('pageNo');
 console.log('currentPageNo:'+pageNo);
@@ -20,11 +24,11 @@ if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
 			var nextPageNo = currentPageNo+1;
 			$.each(downloads.data.list, function(i, list) {
 				var li = $('<li></li>');
-				if(list.weight === 0) {
-					$(li).append('<a href="'+url+list.url+'" target="view_window" >'+list.thema+'</a><span>'+list.uploadDate+'</span>');
+				if(list.owner === 0) {
+					$(li).append('<a href="'+download_api+"?fileId="+list.fileId+'" target="view_window" >'+list.thema+'</a><span>'+list.uploadDate+'</span>');
 					$(li).appendTo('#file-list');
 				} else {
-					$(li).append('<a href="'+url+list.url+'" class="vcwss" target="view_window" >'+list.thema+'</a><span>'+list.uploadDate+'</span>');
+					$(li).append('<a href="'+download_api+"?fileId="+list.fileId+'" class="vcwss" target="view_window" >'+list.thema+'</a><span>'+list.uploadDate+'</span>');
 					$(li).appendTo('#file-list');
 				}
 			});
