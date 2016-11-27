@@ -12,6 +12,7 @@ function getParameterByName(name, url) {
 // 解析文章信息
 var api = getParameterByName('url');
 var archive = getParameterByName('type');
+var title = getParameterByName('title');
 var ip = 'http://vcwss.de/'
 var fullUrl = ip +api;
 
@@ -19,4 +20,4 @@ var fullUrl = ip +api;
 $('#article-content').html('');
 $('#article-content').load(fullUrl);
 $('.breadcrumb .active').text(archive);
-
+document.title = title;

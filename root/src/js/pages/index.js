@@ -1,19 +1,41 @@
+/*
+	Author: Nan Zhao
+	Contact: znzp124900171@icloud.com
+	Version: 1.0.0
+	Created: August 2016
+	File Description: Homepage JS of www.vcwss.de
+	Reference: Cubana Thema from Harry created in February 2015
+*/
+
+
 $(document).ready(function() {
 	$('#navPage-home').addClass('active');
+
+	// 灯箱效果
+	$('.show-image').magnificPopup({type: 'image'});
+
+	// 广告栏
+	$(window).stellar({
+	    horizontalScrolling: false,
+	    responsive: true,
+	    scrollProperty: 'scroll',
+	    parallaxElements: false,
+	    horizontalOffset: 0,
+	    verticalOffset: 0
+	});
 });
 
-// 灯箱效果
-$('.show-image').magnificPopup({type: 'image'});
-
-// 广告栏
-$(window).stellar({
-    horizontalScrolling: false,
-    responsive: true,
-    scrollProperty: 'scroll',
-    parallaxElements: false,
-    horizontalOffset: 0,
-    verticalOffset: 0
+//Typed
+$(".element").each(function(){
+    var $this = $(this);
+    $this.typed({
+    strings: $this.attr('data-elements').split(','),
+    typeSpeed: 100, // typing speed
+    backDelay: 3000 // pause before backspacing
+    });
 });
+
+
 
 var sysLan = window.navigator.language;
 
@@ -25,7 +47,6 @@ $('#lang-de').click(function() {
 	sysLan = 'de-DE';
 });
 
-var api = 'http://vcwss.de/';
 var apiEvent = 'http://vcwss.de/events/post_contents.html';
 var apiNews = 'http://vcwss.de/news/post_contents.html'
 
@@ -38,13 +59,15 @@ if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
 				var id = '#carousel-'+i;
 				var imgUrl = list.img.replace('/_thumbs','');
 				$(id+' .carousel-title').text(list.title);
-				$(id+' .carousel-text p').text(list.subtitle);
+				// $(id+' .carousel-text p').text(list.subtitle);
 				if(list.type === 'event') {
 					$(id+' .carousel-text a').attr('href', apiEvent+'?url=vcwss'+list.url+'&type='+list.type);
 				} else {
 					$(id+' .carousel-text a').attr('href', apiNews+'?url=vcwss'+list.url+'&type='+list.type);
 				}
-				$(id+' img').attr('src', api+imgUrl);
+				$(id+' img').attr('src', 'http://vcwss.de/'+imgUrl);
+				$('element').attr('data-elements', list.subtitle);
+				console.log(list.subtitle);
 			});
 		}
 	});
@@ -119,8 +142,8 @@ if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
 				var imgUrl = list.img.replace('/_thumbs','');
 				$('.parallax .heading h2').text(list.title);
 				$('.parallax .subheading h4').text(list.subtitle);
-				$('#inner-section').css('background-image', 'url('+api+imgUrl+')');
-				$('#inner-section .btn-custom').attr('href', 'http://47.90.202.48/vcwss'+list.url);
+				$('#inner-section').css('background-image', 'url(http://vcwss.de/'+imgUrl+')');
+				$('#inner-section .btn-custom').attr('href', 'http://'+list.origin);
 			});
 		}
 	});
@@ -131,10 +154,10 @@ if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
 			$.each(galleries.data.list, function(i,list){
 				var id = '#gallery-'+i;
 				$(id+' .work-desc a').text(list.title);
-				$(id+' .img').attr('src', api+list.coverImage);
+				$(id+' .img').attr('src', 'http://vcwss.de/'+list.coverImage);
 				$(id+' .img-responsive').attr('src', list.coverImage);
-				$(id+' .item-img-overlay a').attr('href', api+list.coverImage);
-				$(id+' .work-desc a').attr('href', api+'vcwss'+list.url);
+				$(id+' .item-img-overlay a').attr('href', 'http://vcwss.de/'+list.coverImage);
+				$(id+' .work-desc a').attr('href', 'http://vcwss.de/gallery/galleryImages.html?title='+list.title);
 			});
 		}
 	});

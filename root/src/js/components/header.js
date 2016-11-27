@@ -130,6 +130,12 @@ $(document).ready(function() {
 	$(".loader").delay(150).fadeOut();
     $(".animationload").delay(300).fadeOut("slow");
 
+    // 返回页首按钮
+    $(".back-to-top").click(function(event) {
+    	$("html, body").animate({scrollTop: 0}, 1000);
+    	return false;
+    });
+
     // 检查用户是否已登录
     checkCookie();
 

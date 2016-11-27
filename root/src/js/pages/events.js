@@ -38,7 +38,8 @@ if(sysLan === 'zh-CN' || sysLan === 'zh-cn') {
 				}
 				var li = $('<li></li>');
 				var article = $('<div class="article"></div>');
-				articleUrl = ip+'events/post_contents.html?url=vcwss'+list.url+'&type='+eventType;
+				articleUrl = ip+'events/post_contents.html?url=vcwss'+list.url+'&type='+eventType+'&title='+list.title;
+				console.log(list.title);
 				$(article).append('<h3 class="article-title"><a href="'+articleUrl+'">'+list.title+'</a></h3>');
 				$(article).append('<div class="index-author-comments-date"><span class="author-name">'+list.author+'</span>&nbsp;&nbsp;<a href="'+'#'+'" class="archive">'+eventType+'</a>&nbsp;&nbsp; '+list.eventTime+'</div>');
 				$(article).append('<div class="article-image"><a href="'+articleUrl+'"><img src="'+ip+imgUrl+'"></a></div>');
